@@ -145,20 +145,50 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => { 
-  arr.forEach((value,idx=0,array) => {
-    // console.log(array)
-    let remainder = value % 2;
-    if (remainder === 0 ) {
-      array.splice(idx, 1)
-      idx += 1
+  // let i = 0;
+  // arr.forEach(value => {
+  //   if (value % 2 === 0) {i++
+  //     // console.log(i)
+  //   }
+  // })
+
+  // arr.sort((a,b) => {
+  //   if (b % 2 === 0) {
+  //     return -1
+  //   } else {
+  //     return 1
+  //   }
+  // });
+  // arr.length = i;
+  // console.log(i)
+
+  // for (let j=i; j>0; j--) {
+  //   arr[j].pop()
+  // }
+
+  // }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0 ) {
+      arr.splice(i, 1)
+      i--;
     }
-  });
+  }
+  return arr
 
-//   console.log(arr)
 
-  return
+  // arr.forEach((value,idx) => {
+  //   if ( value % 2 === 0 ) {
+  //     arr.splice(idx, 1)
+  //     idx--;
+  //   }
+  // });
+  // return arr
 
 }
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
@@ -207,10 +237,10 @@ For example, removeVowels('gregor') returns 'grgr'.
 ------------------------------------------------------------------------------------------------ */
 
 const removeVowels = (str) => {
-    let regex = /[aeiou]/g
-    let newStr = str.replace(regex, '');
-    // console.log(newStr)
-    return newStr
+  let regex = /[aeiou]/g
+  let newStr = str.replace(regex, '');
+  // console.log(newStr)
+  return newStr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -224,9 +254,9 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 ------------------------------------------------------------------------------------------------ */
 
 const extractVowels = (str) => {
-    let regex = /[aeiou]/g
-    let newStr = str.match(regex)
-    console.log(newStr)
+  let regex = /[aeiou]/g
+  let newStr = str.matchAll(regex)
+  console.log(newStr)
 };
 
 /* ------------------------------------------------------------------------------------------------
