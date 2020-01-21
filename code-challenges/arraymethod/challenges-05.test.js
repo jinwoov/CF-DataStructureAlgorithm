@@ -17,6 +17,7 @@ const howMuchPencil = (str) => {
   let result = [];
   result.push(str)
   let splitted = str.split("")
+  console.log(splitted)
   splitted.forEach((value,idx) => {
     let sliced = str.slice(idx+1)
     result.push(sliced)

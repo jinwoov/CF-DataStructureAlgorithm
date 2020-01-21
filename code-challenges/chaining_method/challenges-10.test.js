@@ -14,7 +14,7 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 const count = (target, input) => {
   let tally = 0;
   input.map(values => {
-    return values.filter(value => {
+    values.filter(value => {
       if (value === target) {
         tally++
       }
@@ -133,7 +133,7 @@ let findMaleAndFemale = (data) => {
       result.push(value.name)
     }
     return result
-  },[]).join(' and ')
+  },[]).join(' and ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -146,11 +146,11 @@ let findShortest = (data) => {
   let result = data[0];
   data.filter(value => {
     if (parseInt(result.height)> parseInt(value.height)) {
-        result = value
-        return true
+      result = value
+      return true
     }
   })
-    return result.name
+  return result.name
 };
 
 /* ------------------------------------------------------------------------------------------------
