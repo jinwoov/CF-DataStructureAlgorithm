@@ -13,7 +13,7 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  let regex = /\d/gm
+  let regex = /\d/g
   return regex.test(input);
 };
 
@@ -28,13 +28,6 @@ Return an array containing all the matches.
 const isCapitalized = (str) => {
   let regex = /[A-Z]\w*/gm;
   return str.match(regex) || []
-  // console.log(str.match(regex))
-  // return str.match(regex)
-  
-
-  // let regex = /[A-Z]\w*/gm;
-  // console.log(str.match(regex));
-  // return str.match(regex);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,10 +60,7 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // let regex = /^[oO]ctober/;
-  // console.log('thisis regex', regex)
   let regex = /\b[O,o]ct(?!ob$)\w*/g;
-  // console.log('input from q4', input)
   return regex.test(input)
 };
 
