@@ -17,7 +17,7 @@ const howMuchPencil = (str) => {
   let result = [];
   result.push(str)
   let splitted = str.split("")
-  console.log(splitted)
+  // console.log(splitted)
   splitted.forEach((value,idx) => {
     let sliced = str.slice(idx+1)
     result.push(sliced)
@@ -104,10 +104,10 @@ const splitFoods = (recipe) => {
   let recipeList = recipe.ingredients
   recipeList.forEach(value => {
     let words = value.split(" ")
+    console.log(words)
     return words[4] ? result.push(`${words[2]} ${words[3]} ${words[4]}`)
-      :words[3] ? result.push(`${words[2]} ${words[3]}`) 
-        :result.push(words[2])
-
+      :words[3] ? result.push(`${words[2]} ${words[3]}`)
+        :result.push(words[2]);
   })
   return result;
 };
@@ -211,7 +211,6 @@ removeLastCharacters('Gregor', 9) returns ''
 const removeLastCharacters = (str, numberOfCharacters) => {
   return numberOfCharacters > 0 ? str.slice(0, -numberOfCharacters) 
     : str
-
 };
 
 
