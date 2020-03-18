@@ -1,9 +1,7 @@
-# Code Challenge
+# **Array Shift**
 
 **Author: Jin Kim**
 
----
-## **Array Shift**
 ---
 
 ### Problem Domain
@@ -38,8 +36,18 @@ Given an array insert the input integer value to the given array in the middle o
 
 
 ---
+### Screen Shot
+---
+![Application Demo](../../assets/ArrayShift/RunningApplication.png)
+Screenshot of functional application
 
+![Unit Testing](../../assets/ArrayShift/TestingPass.png)
+Screenshot of unit testing passed
+
+---
 ### Change Log
- 
+1.3 - Added stretch goal method that will delete middle index element from given and return that array 
+1.2 - Created Unit Testing that passes
+1.1 - Added method that insert given value in to an array and shifting its length and position from the middle.
 1.0 - Set up Repo and sort out 301 code challenges to 301 folders and started code challenge 2
 

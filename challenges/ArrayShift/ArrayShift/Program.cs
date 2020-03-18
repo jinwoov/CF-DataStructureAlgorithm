@@ -7,10 +7,13 @@ namespace ArrayShift
 
         static void Main(string[] args)
         {
-
+            // invoking insertshiftarray method
             int[] testArray = new[] { 4, 8, 15, 23, 42 };
+            Console.WriteLine($"Your original input is {String.Join(", ", testArray)}");
             int[] resultArray = InsertShiftArray(testArray, 16);
+            // showing what is in the new array
             Console.WriteLine("This is the output after inserting a value to middle {0}", String.Join(", ", resultArray));
+            Console.ReadLine();
         }
 
         public static int[] InsertShiftArray(int[] array, int numberArg)
@@ -60,6 +63,7 @@ namespace ArrayShift
                 if (i >= halfOfArrayLength)
                 {
                     newArray[i] = array[++ind];
+                    // Decrementing to initialize the index of old array
                     ind--;
                 }
                 else
