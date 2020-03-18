@@ -13,9 +13,19 @@ namespace ArrayShift
             int[] resultArray = InsertShiftArray(testArray, 16);
             // showing what is in the new array
             Console.WriteLine("This is the output after inserting a value to middle {0}", String.Join(", ", resultArray));
+            int[] resultArrayAfterDelete = StretchGoal(testArray);
+            Console.WriteLine("This is the output after deleting a value in the middle {0}", String.Join(", ", resultArrayAfterDelete));
+
+
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// This method will insert the element to the middle of the array
+        /// </summary>
+        /// <param name="array">input array</param>
+        /// <param name="numberArg">value to insert</param>
+        /// <returns>Returns array with value inserted in middle of array.</returns>
         public static int[] InsertShiftArray(int[] array, int numberArg)
         {
             // Declaring variables 
@@ -49,6 +59,11 @@ namespace ArrayShift
             return newArray;
         }
 
+        /// <summary>
+        /// This method deletes element from middle index of array
+        /// </summary>
+        /// <param name="array">Given array that will lose middle value</param>
+        /// <returns>Array with missing middle element</returns>
         public static int[] StretchGoal(int[] array)
         {
             // Declare a variables
