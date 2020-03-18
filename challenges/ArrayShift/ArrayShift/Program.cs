@@ -13,7 +13,9 @@ namespace ArrayShift
             int[] resultArray = InsertShiftArray(testArray, 16);
             // showing what is in the new array
             Console.WriteLine("This is the output after inserting a value to middle {0}", String.Join(", ", resultArray));
+            // Invoking deleting element from array method
             int[] resultArrayAfterDelete = StretchGoal(testArray);
+            // Showing what is in the out array after deleting middle index
             Console.WriteLine("This is the output after deleting a value in the middle {0}", String.Join(", ", resultArrayAfterDelete));
 
 
