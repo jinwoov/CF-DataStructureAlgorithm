@@ -37,7 +37,20 @@ namespace LinkListXunit
         }
 
         [Fact]
-        public void CanInsertMultipleNodeIntoLinkedList()
+        public void CanInsertMultipleNodeIntoLinkList()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(4);
+            ll.Insert(2);
+
+            Node node = ll.Head.Next;
+
+
+            Assert.Equal(4, node.Data);
+        }
+
+        [Fact]
+        public void CanFindExistingNode()
         {
             Linklist ll = new Linklist();
 
@@ -49,6 +62,35 @@ namespace LinkListXunit
             bool doesItHave = ll.Includes(4);
 
             Assert.True(doesItHave);
+        }
+        
+        [Fact]
+        public void CannnotFindNodeWhenNodeDoesntExist()
+        {
+            Linklist ll = new Linklist();
+
+            ll.Insert(3);
+            ll.Insert(5);
+            ll.Insert(4);
+            ll.Insert(2);
+
+            bool doesItHave = ll.Includes(10);
+
+            Assert.False(doesItHave);
+        }
+
+        [Fact]
+        public void CanReturnAllofTheLinkList()
+        {
+            Linklist ll = new Linklist();
+
+            ll.Insert(3);
+            ll.Insert(5);
+            ll.Insert(4);
+            ll.Insert(2);
+
+            ll.ToString();
+
         }
     }
 }

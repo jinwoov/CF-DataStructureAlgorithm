@@ -37,7 +37,7 @@ namespace LinkdList.Classes
         /// checking if the value is included in the link list
         /// </summary>
         /// <param name="value">Value is going to be finding a value</param>
-        /// <returns></returns>
+        /// <returns>Returns false/true if value exists in the link lis tchain</returns>
         public bool Includes(int value)
         {
             // Set a current as the head
@@ -58,7 +58,9 @@ namespace LinkdList.Classes
             // if it doesn't include value being searched
             return false;
         }
-
+        /// <summary>
+        /// recursive method that will print our node
+        /// </summary>
         public void ToString()
         {
             if (Head != null)
