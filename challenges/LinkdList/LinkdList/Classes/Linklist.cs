@@ -112,11 +112,37 @@ namespace LinkdList.Classes
 
                     Current.Next = node;
 
-                    return;
+                    break;
                 }
                 // traverse to next value if current is not a match
                 Current = Current.Next;
             }
         }
+        
+        public void InsertAfter(int value, int newValue)
+        {
+            Current = Head;
+            Node node = new Node();
+            node.Data = newValue;
+
+            // create a while loop to check check if current value is matching the value that is being searched
+            while (Current != null)
+            {
+                // checking if the value of current is matching input
+                if (Current.Data == value)
+                {
+                    // Set the value of node to argument integer
+
+                    // Set the next to the head
+                    node.Next = Current.Next;
+
+                    Current.Next = node;
+
+                    break;
+                }
+                // traverse to next value if current is not a match
+                Current = Current.Next;
+            }
+        }   
     }
 }
