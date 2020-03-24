@@ -26,10 +26,13 @@ namespace LinkdList
                 bool search = ll.Includes(3);
                 Console.WriteLine($" This is the include method: {search.ToString()}");
 
+                // A method that will append the node at last link list
                 ll.Append(13);
 
+                // A method that will add before first argument value of node with second argument value node
                 ll.InsertBefore(5, 22);
 
+                // Adding a node after 22 with node with 401 value
                 ll.InsertAfter(22, 401);
 
                 // Printing out everything in linklist
