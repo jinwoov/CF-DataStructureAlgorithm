@@ -106,7 +106,25 @@ namespace LinkListXunit
 
             ll.Append(12);
 
-            ll.ToString();
+            string answer = "2 -> 4 -> 5 -> 3 -> 12 -> NULL";
+
+            Assert.Equal(answer, ll.ToString());
         }
+
+        [Fact]
+        public void CanAddBeforeSearchValue()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(3);
+            ll.Insert(5);
+            ll.Insert(4);
+            ll.Insert(2);
+
+            ll.InsertBefore(5, 10);
+            string answer = "2 -> 4 -> 10 -> 5 -> 3 -> NULL";
+
+            Assert.Equal(answer, ll.ToString());
+        }
+
     }
 }

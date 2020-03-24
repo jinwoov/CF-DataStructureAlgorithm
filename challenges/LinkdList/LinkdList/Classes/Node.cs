@@ -31,5 +31,7 @@ namespace LinkdList.Classes
                 Next.AppendNode(input);
             }
         }
+
+
     }
 }
