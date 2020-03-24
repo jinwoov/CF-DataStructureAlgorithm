@@ -92,21 +92,26 @@ namespace LinkdList.Classes
                 Head.AppendNode(input);
             }
         }
-
+        /// <summary>
+        /// This is method that will create a node before the targed value
+        /// </summary>
+        /// <param name="value">Searching value</param>
+        /// <param name="newValue">New value will be inserted right before the search value</param>
         public void InsertBefore(int value, int newValue)
         {
             Current = Head;
-           
+           // Check to make sure that value that we are trying look for is head
             if (Head.Data == value)
             {
+                // Instantiating an object node
                 Node node = new Node();
-
+                // setting data to new value that is passed in
                 node.Data = newValue;
-
+                // setting the node next to current head object
                 node.Next = Head;
-
+                // changing current head to new node object
                 Head = node;
-
+                // return is needed because changing head will change current value which will throw null error
                 return;
             }
             // create a while loop to check check if current value is matching the value that is being searched
@@ -115,14 +120,15 @@ namespace LinkdList.Classes
                 // checking if the value of current is matching input
                 if (Current.Next.Data == value)
                 {
+                    // Instantiating node to class Node
                     Node node = new Node();
-
+                    // seeting the current value to the argument value
                     node.Data = newValue;
                     // Set the next to the head
                     node.Next = Current.Next;
-
+                    //seeing the next of current to be node
                     Current.Next = node;
-
+                    //break out of this while loop
                     break;
                 }
                 // traverse to next value if current is not a match
@@ -130,6 +136,11 @@ namespace LinkdList.Classes
             }
         }
         
+        /// <summary>
+        /// This is to insert the new node with value after search value node
+        /// </summary>
+        /// <param name="value">This is search value which current node will traverse and look for the search value</param>
+        /// <param name="newValue">Add that node with this value so it will be after search value</param>
         public void InsertAfter(int value, int newValue)
         {
             Current = Head;
@@ -147,8 +158,10 @@ namespace LinkdList.Classes
                     // Set the next to the head
                     node.Next = Current.Next;
 
+                    //setting the current next to the node
                     Current.Next = node;
 
+                    //break out of this while loop
                     break;
                 }
                 // traverse to next value if current is not a match
