@@ -33,5 +33,20 @@ namespace LinkdList.Classes
             Console.Write("NULL");
             }
         }
+
+        /// <summary>
+        /// This is to append node if its not available and recurse when next is not null.
+        /// </summary>
+        public void AppendNode()
+        {
+            if (Next == null)
+            {
+                Next = new Node();
+            }
+            else 
+            {
+                Next.AppendNode();
+            }
+        }
     }
 }
