@@ -26,8 +26,10 @@ namespace LinkdList
                 bool search = ll.Includes(3);
                 Console.WriteLine($" This is the include method: {search.ToString()}");
 
+                ll.Append(13);
+
                 // Printing out everything in linklist
-                ll.ToString();
+                Console.WriteLine(ll.ToString());
             }
             catch (ArgumentException)
             {

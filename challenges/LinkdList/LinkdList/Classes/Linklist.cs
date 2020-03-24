@@ -59,13 +59,37 @@ namespace LinkdList.Classes
             return false;
         }
         /// <summary>
-        /// recursive method that will print our node
+        /// Will return all of the appended text with string builder as an output
         /// </summary>
-        public void ToString()
+        public override string ToString()
         {
-            if (Head != null)
+            Current = Head;
+            StringBuilder sb = new StringBuilder();
+            while (Current != null)
             {
-                Head.PrintNode();
+                sb.Append($"{Current.Data} -> ");
+                Current = Current.Next;
+            }
+
+            // we are at null at this point
+            sb.Append("NULL");
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Append method will call method in the node class
+        /// </summary>
+        /// <param name="input">input is what user put for value</param>
+        public void Append(int input)
+        {
+            if (Head == null)
+            {
+                Head = new Node();
+                Head.Data = input;
+            }
+            else
+            {
+                Head.AppendNode(input);
             }
         }
     }

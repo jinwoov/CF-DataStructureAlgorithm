@@ -90,7 +90,23 @@ namespace LinkListXunit
             ll.Insert(2);
 
             ll.ToString();
+            string answer = "2 -> 4 -> 5 -> 3 -> NULL";
 
+            Assert.Equal(answer, ll.ToString());
+        }
+
+        [Fact]
+        public void AddingLinkListToEnd()
+        {
+            Linklist ll = new Linklist();
+            ll.Insert(3);
+            ll.Insert(5);
+            ll.Insert(4);
+            ll.Insert(2);
+
+            ll.Append(12);
+
+            ll.ToString();
         }
     }
 }
