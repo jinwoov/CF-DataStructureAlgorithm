@@ -8,7 +8,8 @@
 1. Reverse Array
 2. [Array Shift](./challenges/ArrayShift/README.md)
 3. [Binary Search](./challenges/BinarySearch/README.md)
-3. [Link List](./challenges/LinkdList/README.md)
+3. [Link List](./challenges/LinkdList/LinkList.md)
+4. [Link List Insertion](./challenges/LinkdList/LinkListTwo.md)
 
 ---
 ## How to Run

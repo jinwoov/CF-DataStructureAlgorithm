@@ -11,6 +11,11 @@ namespace LinkdList
         /// <param name="args">none</param>
         static void Main(string[] args)
         {
+            RunMethod();
+        }
+
+        static void RunMethod()
+        {
             try
             {
                 // instantiating the object
@@ -27,7 +32,20 @@ namespace LinkdList
                 Console.WriteLine($" This is the include method: {search.ToString()}");
 
                 // Printing out everything in linklist
-                ll.ToString();
+                Console.WriteLine("This is after inserting from beginning: {0}", ll.ToString());
+
+                // A method that will append the node at last link list
+                ll.Append(13);
+                Console.WriteLine($"This is after appending 13 to the last node: {ll.ToString()}");
+
+                // A method that will add before first argument value of node with second argument value node
+                ll.InsertBefore(5, 911);
+                Console.WriteLine($"This is after inserting 911 before 5: {ll.ToString()}");
+
+                // Adding a node after 22 with node with 401 value
+                ll.InsertAfter(13, 211);
+                Console.WriteLine($"This is after inserting 211 after 13: {ll.ToString()}");
+
             }
             catch (ArgumentException)
             {
@@ -35,7 +53,7 @@ namespace LinkdList
             }
             catch (Exception)
             {
-                throw new Exception("Your have messed up");
+                throw new Exception("Your input was inputted wrongly @_@{0}");
             }
 
             

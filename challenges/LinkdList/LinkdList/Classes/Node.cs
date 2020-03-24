@@ -17,21 +17,21 @@ namespace LinkdList.Classes
         public Node Next { get; set; }
 
         /// <summary>
-        /// Printing the nodes until the next is null
+        /// This is to append node if its not available and recurse when next is not null.
         /// </summary>
-        public void PrintNode()
+        public void AppendNode(int input)
         {
-            // printing out all of the data
-            Console.Write($"{Data} ->");
-            // if next is not a null which not a end of the list, call itself again when its null print 
-            if (Next != null)
+            if (Next == null)
             {
-                Next.PrintNode();
+                Next = new Node();
+                Next.Data = input;
             }
-            else
+            else 
             {
-            Console.Write("NULL");
+                Next.AppendNode(input);
             }
         }
+
+
     }
 }
