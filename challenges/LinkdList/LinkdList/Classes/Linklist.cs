@@ -77,7 +77,7 @@ namespace LinkdList.Classes
         }
 
         /// <summary>
-        /// Append method will call method in the node class
+        /// Append method will recursively call method from the node class 
         /// </summary>
         /// <param name="input">input is what user put for value</param>
         public void Append(int input)
@@ -89,6 +89,7 @@ namespace LinkdList.Classes
             }
             else
             {
+                // recurse method from Node class
                 Head.AppendNode(input);
             }
         }
@@ -103,14 +104,7 @@ namespace LinkdList.Classes
            // Check to make sure that value that we are trying look for is head
             if (Head.Data == value)
             {
-                // Instantiating an object node
-                Node node = new Node();
-                // setting data to new value that is passed in
-                node.Data = newValue;
-                // setting the node next to current head object
-                node.Next = Head;
-                // changing current head to new node object
-                Head = node;
+                Insert(newValue);
                 // return is needed because changing head will change current value which will throw null error
                 return;
             }
