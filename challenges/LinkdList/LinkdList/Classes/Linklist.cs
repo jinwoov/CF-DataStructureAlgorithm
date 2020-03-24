@@ -96,17 +96,28 @@ namespace LinkdList.Classes
         public void InsertBefore(int value, int newValue)
         {
             Current = Head;
-            Node node = new Node();
-            node.Data = newValue;
+           
+            if (Head.Data == value)
+            {
+                Node node = new Node();
 
+                node.Data = newValue;
+
+                node.Next = Head;
+
+                Head = node;
+
+                return;
+            }
             // create a while loop to check check if current value is matching the value that is being searched
             while (Current != null)
             {
                 // checking if the value of current is matching input
                 if (Current.Next.Data == value)
                 {
-                    // Set the value of node to argument integer
+                    Node node = new Node();
 
+                    node.Data = newValue;
                     // Set the next to the head
                     node.Next = Current.Next;
 

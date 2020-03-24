@@ -28,7 +28,7 @@ namespace LinkdList
 
                 ll.Append(13);
 
-                ll.InsertBefore(3, 22);
+                ll.InsertBefore(5, 22);
 
                 ll.InsertAfter(22, 401);
 
@@ -41,7 +41,7 @@ namespace LinkdList
             }
             catch (Exception)
             {
-                throw new Exception("Your input was inputted wrongly @_@");
+                throw new Exception("Your input was inputted wrongly @_@{0}");
             }
 
             
