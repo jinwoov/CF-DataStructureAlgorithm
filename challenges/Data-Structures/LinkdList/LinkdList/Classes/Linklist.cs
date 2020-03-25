@@ -161,30 +161,49 @@ namespace LinkdList.Classes
                 Current = Current.Next;
             }
         }
+
+        /// <summary>
+        /// Looking for the element from the back of the linked list from given k value.
+        /// </summary>
+        /// <param name="k">index of position from back that linked list going to look for</param>
+        /// <returns>Element in k position</returns>
         public int kthFromEnd(int k)
         {
+            //initializing currnet as a head
             Current = Head;
+            // count will be used to traverse and incremented, counting each node outputing length of linked list
             int count = 0;
+            // This will be used in second iteration when it will use as a second counter to look for an element
             int newCount = 0;
 
+            // first loop to look at the length of given linked list
             while (Current != null)
             {
                 count++;
                 Current = Current.Next;
             }
 
+            // using the total length, it will minus the given search index and it will be used to traverse and make a stop at node we are looking for
             count = count - k;
+
+            // reinitializing the Current from null
             Current = Head;
+
+            // second loop to stop at position where count is which will be our node that we are looking for
             while (Current != null)
             {
+                // this is like i in the for loop
                 newCount++;
+                //if newcount hit the count we are looking for it will hit this `if` statement
                 if (newCount == count)
                 {
+                    // returns that point of node value
                     return Current.Data;
                 }
+                // it will keep move the current node position
                 Current = Current.Next;
             }
-
+            // if the node we are looking for is out of range, this exception will be thrown to the user indicating the message
             throw new Exception("That value is out of range");
         }
 
@@ -194,6 +213,7 @@ namespace LinkdList.Classes
         /// <returns>The node value that is in the middle of the link list</returns>
         public int kthFromMiddle()
         {
+            // much like same as above method
             Current = Head;
             int count = 0;
             int newCount = 0;
@@ -204,6 +224,7 @@ namespace LinkdList.Classes
                 Current = Current.Next;
             }
             
+            // this is to math ceil if the value has remainder
             if (count % 2 != 0)
             {
                 count = (count / 2)+1;
@@ -215,6 +236,7 @@ namespace LinkdList.Classes
 
             Current = Head;
 
+            // this traversing will stop at middle of the linked list
             while (Current != null)
             {
                 newCount++;
