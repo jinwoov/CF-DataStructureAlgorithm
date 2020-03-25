@@ -187,5 +187,106 @@ namespace LinkListXunit
 
             Assert.Equal(answer, ll.ToString());
         }
+
+        [Fact]
+        public void KisGreaterThanLengthOfList()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(3);
+            ll.Append(5);
+            ll.Append(4);
+            ll.Append(2);
+            ll.Append(6);
+            ll.Append(11);
+            ll.Append(21);
+            ll.Append(12);
+
+            Exception error = Record.Exception(() => ll.kthFromEnd(20));
+
+            Assert.IsType<Exception>(error);
+        }
+
+        [Fact]
+        public void SameNumberOfKasLengthOfLL()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(3);
+            ll.Append(5);
+            ll.Append(4);
+            ll.Append(2);
+            ll.Append(6);
+            ll.Append(11);
+            ll.Append(21);
+            ll.Append(12);
+
+            Exception error = Record.Exception(() => ll.kthFromEnd(8));
+
+            Assert.IsType<Exception>(error);
+        }
+
+        [Fact]
+        public void KisNegativeValue()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(3);
+            ll.Append(5);
+            ll.Append(4);
+            ll.Append(2);
+            ll.Append(6);
+            ll.Append(11);
+            ll.Append(21);
+            ll.Append(12);
+
+            Exception error = Record.Exception(() => ll.kthFromEnd(-1));
+
+            Assert.IsType<Exception>(error);
+        }
+
+        [Fact]
+        public void LinkListSizeUno()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(69);
+
+            var output = ll.kthFromEnd(0);
+
+            Assert.Equal(69, output);
+        }
+
+        [Fact]
+        public void KisInTheMiddleOfLinkListHappyTree()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(3);
+            ll.Append(5);
+            ll.Append(4);
+            ll.Append(2);
+            ll.Append(808);
+            ll.Append(11);
+            ll.Append(21);
+            ll.Append(12);
+
+            int output = ll.kthFromEnd(3);
+
+            Assert.Equal(808, output);
+        }
+
+        [Fact]
+        public void CheckingIfMiddleElementShowsWithThisMethod()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(3);
+            ll.Append(5);
+            ll.Append(4);
+            ll.Append(808);
+            ll.Append(2);
+            ll.Append(11);
+            ll.Append(21);
+
+            int output = ll.kthFromMiddle();
+
+            Assert.Equal(808, output);
+        }
+
     }
 }
