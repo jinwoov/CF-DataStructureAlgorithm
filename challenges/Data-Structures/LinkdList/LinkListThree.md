@@ -17,7 +17,7 @@ Create a method call `kthFromEnd` that takes k, integer input, as argument and u
 | :----------- |:--------- | :----------- |
 | head -> [1] -> [3] -> [8] -> [2] -> X | 0 | 2 |
 | head -> [1] -> [3] -> [8] -> [2] -> X | 2 | 3 |
-| head -> [1] -> [3] -> [8] -> [2] -> X | 6 | Exception | 
+| head -> [1] -> [3] -> [8] -> [2] -> X | 6 | Exception |
 
 
 ---
