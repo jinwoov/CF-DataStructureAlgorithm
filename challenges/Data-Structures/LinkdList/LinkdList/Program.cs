@@ -46,6 +46,11 @@ namespace LinkdList
                 ll.InsertAfter(13, 211);
                 Console.WriteLine($"This is after inserting 211 after 13: {ll.ToString()}");
 
+                // Checking from the back
+                Console.WriteLine($"This is checking an index 1 from the back which should return |13|: result = {ll.kthFromEnd(1)}");
+
+                Console.WriteLine($"This is checking middle index element {ll.kthFromMiddle()}");
+
             }
             catch (ArgumentException)
             {

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace LinkdList.Classes
@@ -44,11 +43,11 @@ namespace LinkdList.Classes
             Current = Head;
 
             // create a while loop to check check if current value is matching the value that is being searched
-            while(Current != null)
+            while (Current != null)
             {
                 // checking if the value of current is matching input
                 if (Current.Data == value)
-                {   
+                {
                     // return when it matches
                     return true;
                 }
@@ -101,7 +100,7 @@ namespace LinkdList.Classes
         public void InsertBefore(int value, int newValue)
         {
             Current = Head;
-           // Check to make sure that value that we are trying look for is head
+            // Check to make sure that value that we are trying look for is head
             if (Head.Data == value)
             {
                 Insert(newValue);
@@ -129,7 +128,7 @@ namespace LinkdList.Classes
                 Current = Current.Next;
             }
         }
-        
+
         /// <summary>
         /// This is to insert the new node with value after search value node
         /// </summary>
@@ -161,6 +160,72 @@ namespace LinkdList.Classes
                 // traverse to next value if current is not a match
                 Current = Current.Next;
             }
-        }   
+        }
+        public int kthFromEnd(int k)
+        {
+            Current = Head;
+            int count = 0;
+            int newCount = 0;
+
+            while (Current != null)
+            {
+                count++;
+                Current = Current.Next;
+            }
+
+            count = count - k;
+            Current = Head;
+            while (Current != null)
+            {
+                newCount++;
+                if (newCount == count)
+                {
+                    return Current.Data;
+                }
+                Current = Current.Next;
+            }
+
+            throw new Exception("That value is out of range");
+        }
+
+        /// <summary>
+        /// Stretchgoalto check k from the middle
+        /// </summary>
+        /// <returns>The node value that is in the middle of the link list</returns>
+        public int kthFromMiddle()
+        {
+            Current = Head;
+            int count = 0;
+            int newCount = 0;
+
+            while (Current != null)
+            {
+                count++;
+                Current = Current.Next;
+            }
+            
+            if (count % 2 != 0)
+            {
+                count = (count / 2)+1;
+            }
+            else
+            {
+                count = count / 2;
+            }
+
+            Current = Head;
+
+            while (Current != null)
+            {
+                newCount++;
+                if (newCount == count)
+                {
+                    return Current.Data;
+                }
+                Current = Current.Next;
+            }
+
+            throw new Exception("That value is out of range or have put incorrect value!");
+        }
     }
 }
