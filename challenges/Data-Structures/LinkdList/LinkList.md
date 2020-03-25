@@ -32,17 +32,17 @@ Create a node class that has properties for value and next that reference next n
 
 
 ### Whiteboard Visual
-![Linked-List](../../assets/Linked-List-Implementation.png)
+![Linked-List](../../../assets/Linked-List-Implementation.png)
 
 
 ---
 
 ### Screen Shot
 ---
-![Application Demo](../../assets/LinkList/application.png)
+![Application Demo](../../../assets/LinkList/application.png)
 Screenshot of functional application
 
-![Unit Testing](../../assets/LinkList/Unit-test.png)
+![Unit Testing](../../../assets/LinkList/Unit-test.png)
 Screenshot of unit testing passed
 
 ---

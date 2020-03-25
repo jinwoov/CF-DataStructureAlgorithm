@@ -32,17 +32,17 @@ Write a method `Append` that takes in a integer value and assign the new Node va
 
 
 ### Whiteboard Visual
-![Linked-List](../../assets/Link-list-insertion.png)
+![Linked-List](../../../assets/Link-list-insertion.png)
 
 
 ---
 
 ### Screen Shot
 ---
-![Application Demo](../../assets/LinkListTwo/Application-Working.png)
+![Application Demo](../../../assets/LinkListTwo/Application-Working.png)
 Screenshot of functional application
 
-![Unit Testing](../../assets/LinkListTwo/Unit-test-passing.png)
+![Unit Testing](../../../assets/LinkListTwo/Unit-test-passing.png)
 Screenshot of unit testing passed
 
 ---
