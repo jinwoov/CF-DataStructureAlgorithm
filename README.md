@@ -8,9 +8,10 @@
 1. Reverse Array
 2. [Array Shift](./challenges/ArrayShift/README.md)
 3. [Binary Search](./challenges/BinarySearch/README.md)
-3. [Link List](./challenges/Data-Structures/LinkdList/LinkList.md)
-4. [Link List Insertion](./challenges/Data-Structures/LinkdList/LinkListTwo.md)
-5. [Link List kthFromEnd](./challenges/Data-Structures/LinkdList/LinkListThree.md)
+4. [Link List](./challenges/Data-Structures/LinkdList/LinkList.md)
+5. [Link List Insertion](./challenges/Data-Structures/LinkdList/LinkListTwo.md)
+6. [Link List kthFromEnd](./challenges/Data-Structures/LinkdList/LinkListThree.md)
+7. [Link List Merge](./challenges/Data-Structures/LLMerge/README.md)
 
 ---
 ## How to Run
