@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace LinkdList.Classes
+namespace LLMerge.Classes
 {
     public class Linklist
     {
@@ -250,27 +250,6 @@ namespace LinkdList.Classes
             throw new Exception("That value is out of range or have put incorrect value!");
         }
 
-        //public void mergeLists(Linklist ll, Linklist llTwo)
-        //{
-        //    Node temp = new Node();
-
-        //    Current = ll.Head;
-        //    //int counter = 0;
-        //    temp = llTwo.Head;
-        //    //int counterTwo = 0;
-
-        //    while (Current != null)
-        //    {
-        //        //counter++;
-        //        //counterTwo++;
-        //        //Current = Current.Next;
-        //        //temp = temp.Next;
-        //        ll.InsertAfter(Current.Data, temp.Data);
-
-        //        Current = Current.Next;
-        //        temp = temp.Next;
-
-        //    }
-        //}
+        
     }
 }
