@@ -32,17 +32,17 @@ Write a method `MergedLists` that takes two linked lists as arguments. Merged tw
 
 
 ### Whiteboard Visual
-![LLMerged](../../../assets/LLmerged.png)
+![LLMerged](../../assets/LLmerged.png)
 
 
 ---
 
 ### Screen Shot
 ---
-![Application Demo](../../../assets/LLMerged/applicaiton-running.png)
+![Application Demo](../../assets/LLMerged/applicaiton-running.png)
 Screenshot of application running
 
-![Unit Testing](../../../assets/LLMerged/unit-testing-pass.png)
+![Unit Testing](../../assets/LLMerged/unit-testing-pass.png)
 Screenshot of unit testing passed
 
 ---
