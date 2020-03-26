@@ -287,6 +287,25 @@ namespace LinkListXunit
 
             Assert.Equal(808, output);
         }
+        [Fact]
+        public void CanAddLikeZipper()
+        {
+            Linklist ll = new Linklist();
+            ll.Append(3);
+            ll.Append(5);
+            ll.Append(4);
+            ll.Append(808);
+            ll.Append(2);
+            ll.Append(11);
+            ll.Append(21);
 
+            Linklist llTwo = new Linklist();
+            llTwo.Append(1);
+            llTwo.Append(2);
+            llTwo.Append(3);
+            llTwo.Append(4);
+            llTwo.Append(5);
+            llTwo.Append(6);
+        }
     }
 }
