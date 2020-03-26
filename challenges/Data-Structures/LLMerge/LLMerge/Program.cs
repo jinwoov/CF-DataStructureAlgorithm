@@ -1,9 +1,9 @@
-﻿using LinkdList.Classes;
-using System;
+﻿using System;
+using LLMerge.Classes;
 
 namespace LLMerge
 {
-    class Program
+    public class Program
     {
         /// <summary>
         /// Program is using a reference to created classes from LinkdList
@@ -19,6 +19,10 @@ namespace LLMerge
             ll.Append(5);
             ll.Append(6);
             ll.Append(7);
+
+
+            Console.WriteLine($"This is first link list created: {ll.ToString()}");
+
             // Creating second link list of nodes
             Linklist llTwo = new Linklist();
             llTwo.Append(101);
@@ -28,11 +32,13 @@ namespace LLMerge
             llTwo.Append(105);
             llTwo.Append(106);
 
+            Console.WriteLine($"This is second link list created: {llTwo.ToString()}");
+
             // calling the method to merge it together and store that result to a new link list
             Linklist result = mergeLists(ll, llTwo);
 
             // Output of merged link list
-            Console.WriteLine(result.ToString());
+            Console.WriteLine($"This is when its finally merged and outputting merged link list: {result.ToString()}");
         }
 
         /// <summary>
@@ -53,27 +59,28 @@ namespace LLMerge
             temp = list2.Head;
             current2 = list2.Head;
 
-            // while loop will be ran as a loop to catch any null references
-            while (current != null)
+            // while loop will be ran until temp is null 
+            while (temp != null)
             {
-                // this if statement is crucial piece for merging two link list it will catch incase second linklist is shorter than first link list
-                if (temp != null)
+                //first you set the current2 to the temp as initializer which will be a linklist2
+                current2 = temp;
+                // then before you make any changes to the current2, you change the temp to temp next so it will not sever the ties between two nodes
+                temp = temp.Next;
+                /// checking  if current.next is null hence first link list shorter
+                if (current.Next != null)
                 {
-                    //first you set the current2 to the temp as initializer which will be a linklist2
-                    current2 = temp;
-                    // then before you make any changes to the current2, you change the temp to temp next so it will not sever the ties between two nodes
-                    temp = temp.Next;
                     // current2 will copy the next node of current one which will tie first link between node from linklist2 to linklist1
                     current2.Next = current.Next;
                     // then you tie the node on linklist 1 to tie to linklist 2
                     current.Next = current2;
                 }
-                // this else statmente catches incase linklist2 is done traversing
+                //if link list is shorter this will just tie link list 2 and its remaining at the end
                 else
                 {
+                    current.Next = current2;
                     break;
                 }
-                // this will always change the current node to the next traversal node
+                // traversing through current
                 current = current2.Next;
             }
 

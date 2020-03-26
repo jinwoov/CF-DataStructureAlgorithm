@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLMerge", "LLMerge\LLMerge.csproj", "{6AA3B69A-CDCE-4D1C-B2CF-3628CA26668C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLMerge", "LLMerge\LLMerge.csproj", "{BF3C7B0F-D994-4918-B938-6D25752F7A8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6AA3B69A-CDCE-4D1C-B2CF-3628CA26668C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AA3B69A-CDCE-4D1C-B2CF-3628CA26668C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AA3B69A-CDCE-4D1C-B2CF-3628CA26668C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AA3B69A-CDCE-4D1C-B2CF-3628CA26668C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3C7B0F-D994-4918-B938-6D25752F7A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3C7B0F-D994-4918-B938-6D25752F7A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3C7B0F-D994-4918-B938-6D25752F7A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3C7B0F-D994-4918-B938-6D25752F7A8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FBEC94D7-B83B-44A3-8FA1-7F5A9FDB8E82}
+		SolutionGuid = {69B81068-F6D9-4B37-BB87-49D4BF98F132}
 	EndGlobalSection
 EndGlobal
