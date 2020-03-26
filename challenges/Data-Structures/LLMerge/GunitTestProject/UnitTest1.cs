@@ -27,7 +27,7 @@ namespace GunitTestProject
             llTwo.Append(104);
 
 
-            Linklist result = LLMerged.mergeLists(ll, llTwo);
+            Linklist result = LLMerged.MergeLists(ll, llTwo);
 
             Assert.Equal("1 -> 101 -> 2 -> 102 -> 3 -> 103 -> 4 -> 104 -> NULL", result.ToString());
         }
@@ -41,7 +41,7 @@ namespace GunitTestProject
             llTwo.Append(101);
             llTwo.Append(102);
 
-            Exception error = Record.Exception(() => LLMerged.mergeLists(ll, llTwo));
+            Exception error = Record.Exception(() => LLMerged.MergeLists(ll, llTwo));
 
 
             Assert.IsType<NullReferenceException>(error);

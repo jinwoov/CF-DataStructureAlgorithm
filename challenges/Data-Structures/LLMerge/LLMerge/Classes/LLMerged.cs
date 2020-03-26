@@ -12,7 +12,7 @@ namespace LLMerge.Classes
         /// <param name="list1">First link list</param>
         /// <param name="list2">Second link list</param>
         /// <returns>Link list that tied together</returns>
-        public static Linklist mergeLists(Linklist list1, Linklist list2)
+        public static Linklist MergeLists(Linklist list1, Linklist list2)
         {
             //Three nodes created current is traversing through first link list and current2 will be traversing through second link list. temp act as placeholder for current2 as it will sever the link betweent current and next node while its merging to the link list.
             Node current = new Node();

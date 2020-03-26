@@ -32,7 +32,7 @@ Write a method `MergedLists` that takes two linked lists as arguments. Merged tw
 
 
 ### Whiteboard Visual
-![Linked-List](../../../assets/LLMerged.png)
+![LLMerged](../../../assets/LLMerged.png)
 
 
 ---
@@ -47,7 +47,8 @@ Screenshot of unit testing passed
 
 ---
 ### Change Log
-- 1.3 - Completed README Files.  
+- 1.4 - Completed README Files.  
+- 1.3 - Unit testing implemented and passed.
 - 1.2 - Repository error, recreated the methods and added the refactored the MergedLists method to a new class. 
 - 1.1 - Created `MergedLists` and works in application.
 - 1.0 - Created a repository and copied classes from Link list.

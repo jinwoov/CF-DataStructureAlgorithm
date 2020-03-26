@@ -35,7 +35,7 @@ namespace LLMerge
             Console.WriteLine($"This is second link list created: {llTwo.ToString()}");
 
             // calling the method to merge it together and store that result to a new link list
-            Linklist result = LLMerged.mergeLists(ll, llTwo);
+            Linklist result = LLMerged.MergeLists(ll, llTwo);
 
             // Output of merged link list
             Console.WriteLine($"This is when its finally merged and outputting merged link list: {result.ToString()}");
