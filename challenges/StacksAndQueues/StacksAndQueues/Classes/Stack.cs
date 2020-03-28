@@ -15,6 +15,29 @@ namespace StacksAndQueues.Classes
             Top.Next = OldTop;
         }
 
-        public 
+        public int Pop()
+        {
+            if (Top == null)
+                throw new IndexOutOfRangeException("Index is out of range");
+
+            Node Current = Top;
+
+            Top = Top.Next;
+
+            return Current.Value;
+        }
+
+        public int Peek()
+        {
+            if (Top == null)
+                throw new IndexOutOfRangeException("Index is out of range");
+
+            return Top.Value;
+        }
+
+        public bool IsEmpty()
+        {
+            return Top == null;
+        }
     }
 }
