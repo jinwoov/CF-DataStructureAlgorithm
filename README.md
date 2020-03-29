@@ -12,6 +12,7 @@
 5. [Link List Insertion](./challenges/Data-Structures/LinkdList/LinkListTwo.md)
 6. [Link List kthFromEnd](./challenges/Data-Structures/LinkdList/LinkListThree.md)
 7. [Link List Merge](./challenges/LLMerge/README.md)
+8. [Stacks and Queues](./challenges/StacksAndQueues/README.md)
 
 ---
 ## How to Run
