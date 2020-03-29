@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacksAndQueues", "StacksAndQueues\StacksAndQueues.csproj", "{4D707062-CD76-4F01-B3E8-297E9B80BCBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUnitTest", "GUnitTest\GUnitTest.csproj", "{A757949D-CED1-4875-854E-07F467B54B3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4D707062-CD76-4F01-B3E8-297E9B80BCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D707062-CD76-4F01-B3E8-297E9B80BCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D707062-CD76-4F01-B3E8-297E9B80BCBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A757949D-CED1-4875-854E-07F467B54B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A757949D-CED1-4875-854E-07F467B54B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A757949D-CED1-4875-854E-07F467B54B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A757949D-CED1-4875-854E-07F467B54B3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
