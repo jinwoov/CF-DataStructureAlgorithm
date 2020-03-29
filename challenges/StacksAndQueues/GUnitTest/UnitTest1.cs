@@ -6,7 +6,7 @@ namespace GUnitTest
 {
     public class UnitTest1
     {
-        [Fact]
+        [Fact] //1
         public void CanPushOntoStack()
         {
             Stack stack = new Stack();
@@ -18,7 +18,7 @@ namespace GUnitTest
             Assert.False(result);
         }
 
-        [Fact]
+        [Fact] //2
         public void CanPushMultipleValueOntoStack()
         {
             Stack stack = new Stack();
@@ -34,7 +34,7 @@ namespace GUnitTest
             Assert.Equal(5, result);
         }
 
-        [Fact]
+        [Fact] //3
         public void CanPopOffFromStack()
         {
             Stack stack = new Stack();
@@ -50,7 +50,7 @@ namespace GUnitTest
             Assert.Equal(5, result);
         }
 
-        [Fact]
+        [Fact] //4
         public void EmptyStackAfterPopPop()
         {
             Stack stack = new Stack();
@@ -66,7 +66,7 @@ namespace GUnitTest
             Assert.IsType<IndexOutOfRangeException>(error);
         }
 
-        [Fact]
+        [Fact] //5
         public void PeekTheNextItemOnTheList()
         {
             Stack stack = new Stack();
@@ -81,7 +81,7 @@ namespace GUnitTest
             Assert.Equal(1, result);
         }
 
-        [Fact]
+        [Fact] //6
         public void AbleToInstantiateEmptyStack()
         {
             Stack stack = new Stack();
@@ -91,7 +91,7 @@ namespace GUnitTest
             Assert.True(result);
         }
 
-        [Fact]
+        [Fact] //7
         public void CallingEmptyStackCauseError()
         {
             Stack stack = new Stack();
@@ -101,7 +101,7 @@ namespace GUnitTest
             Assert.IsType<IndexOutOfRangeException>(err);
         }
 
-        [Fact]
+        [Fact] //8
         public void QueueIntoEnqueue()
         {
             Queue queue = new Queue();
@@ -113,7 +113,7 @@ namespace GUnitTest
             Assert.False(result);
         }
 
-        [Fact]
+        [Fact] //9
         public void QueueMultipleEnqueue()
         {
             Queue queue = new Queue();
@@ -129,7 +129,7 @@ namespace GUnitTest
             Assert.Equal(5, result);
         }
 
-        [Fact]
+        [Fact] //10
         public void DequeueOutOfQueue()
         {
             Queue queue = new Queue();
@@ -141,7 +141,7 @@ namespace GUnitTest
             Assert.Equal(5, result);
         }
 
-        [Fact]
+        [Fact] //11
         public void PeekIntoQueue()
         {
             Queue queue = new Queue();
@@ -153,7 +153,7 @@ namespace GUnitTest
             Assert.Equal(5, result);
         }
 
-        [Fact]
+        [Fact] //12
         public void EmptyTheQueueAfterMultipleDequeue()
         {
             Queue queue = new Queue();
@@ -171,7 +171,7 @@ namespace GUnitTest
             Assert.True(result);
         }
 
-        [Fact]
+        [Fact] //13
         public void CanInstantiateAnEmptyQueue()
         {
             Queue queue = new Queue();
@@ -181,7 +181,7 @@ namespace GUnitTest
             Assert.True(result);
         }
 
-        [Fact] //
+        [Fact] //14
         public void DequeueEmptyQueueThrowsError()
         {
             Queue queue = new Queue();

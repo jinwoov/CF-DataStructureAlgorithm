@@ -8,13 +8,21 @@ namespace StacksAndQueues.Classes
     {
         public Node Top { get; set; } = null;
 
+        /// <summary>
+        /// Creating the new top node and moving the old top node to the bottom
+        /// </summary>
+        /// <param name="value"></param>
         public void Push(int value)
         {
-            Node OldTop = Top;
+            Node oldTop = Top;
             Top = new Node(value);
-            Top.Next = OldTop;
+            Top.Next = oldTop;
         }
 
+        /// <summary>
+        /// Getting the top node off from the stack
+        /// </summary>
+        /// <returns>value of node that has been popped</returns>
         public int Pop()
         {
             if (Top == null)
@@ -27,6 +35,10 @@ namespace StacksAndQueues.Classes
             return Current.Value;
         }
 
+        /// <summary>
+        /// Peek to see if the top is there, if the stack doesn't have any node it will throw error.
+        /// </summary>
+        /// <returns></returns>
         public int Peek()
         {
             if (Top == null)
@@ -35,6 +47,10 @@ namespace StacksAndQueues.Classes
             return Top.Value;
         }
 
+        /// <summary>
+        /// Method that checks if the stack is empty.
+        /// </summary>
+        /// <returns>Returns true when the stack is empty, otherwise it wil return false</returns>
         public bool IsEmpty()
         {
             return Top == null;
