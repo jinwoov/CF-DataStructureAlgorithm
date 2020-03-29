@@ -17,7 +17,7 @@ namespace StacksAndQueues.Classes
         {
             Node node = new Node(value);
 
-            if (Rear == null)
+            if (Front == null)
             {
                 Rear = node;
                 Front = node;
