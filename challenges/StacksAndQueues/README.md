@@ -45,7 +45,7 @@ Create a classes, `Stack` and `Queue` that will entail methods to add, take off,
 
 
 ### Whiteboard Visual
-![White Board](../../assets/StackNQueue/whiteboard.png)
+![White Board](../../assets/StackNQueue/whiteboards.png)
 
 
 ---
