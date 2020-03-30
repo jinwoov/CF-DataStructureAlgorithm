@@ -7,7 +7,7 @@ namespace StacksAndQueues.Classes
     public class Queue
     {
         public Node Front { get; set; } = null;
-        public Node Rear { get; set; } = null;
+        private Node Rear { get; set; } = null;
 
         /// <summary>
         /// Adding the Node to the back of the line if the front exists.
