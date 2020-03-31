@@ -13,7 +13,8 @@ Create a classes, `Stack` and `Queue` that will entail methods to add, take off,
 ### Inputs and Expected Outputs
 
 #### Stack
-*Starting stack Top - 5*
+*Starting stack Top - 5*  
+
 |Method | Input | Expected Output |
 | :--------- | :----------- | :----------- |
 | Push | 4 |  Top - 4 - 5 |
@@ -22,7 +23,8 @@ Create a classes, `Stack` and `Queue` that will entail methods to add, take off,
 | IsEmpty | N/A | false |
 
 ### Queue
-*Starting stack Rear - 5 - Front*
+*Starting stack Rear - 5 - Front*  
+
 |Method | Input | Expected Output |
 | :--------- | :----------- | :----------- |
 | Enqueue | 4 |  Rear - 5 - 4 - Front |
