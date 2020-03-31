@@ -12,25 +12,19 @@ Create a class called `PseudoQueue` that has two stack objects when instated and
 
 ### Inputs and Expected Outputs
 
-#### Stack
-*Starting stack Top - 5*  
+#### Enqueue
 
-|Method | Input | Expected Output |
+|Input | Arg | Expected Output |
 | :--------- | :----------- | :----------- |
-| Push | 4 |  Top - 4 - 5 |
-| Pop | N/A | Top - 5 |
-| Peek | N/A | "5" |
-| IsEmpty | N/A | false |
+| [10]->[15]->[20] | 5 |  [5]->[10]->[15]->[20] |
+|   |5| 	[5]|
 
-### Queue
-*Starting stack Rear - 5 - Front*  
+### Dequeue
 
-|Method | Input | Expected Output |
+|Input | Output | Internal State |
 | :--------- | :----------- | :----------- |
-| Enqueue | 4 |  Rear - 5 - 4 - Front |
-| Dequeue | N/A | Rear - 5 - Front |
-| Peek | N/A | "5" |
-| IsEmpty | N/A | false |
+| [5]->[10]->[15]->[20]| 20 | [5]->[10]->[15] |
+| [5]->[10]->[15] |	15 | [5]->[10]|
 
 
 ---
@@ -38,31 +32,35 @@ Create a class called `PseudoQueue` that has two stack objects when instated and
 ### Big O
 
 
-| Time | Space |
-| :----------- | :----------- |
-| O(1) | O(1) |
+| Method | Time | Space |
+| :----------- | :----------- | :----------- |
+| Enqueue | O(n)| O(n) |
+| Dequeue | O(1)| O(n) |
+
 
 
 ---
 
 
 ### Whiteboard Visual
-![White Board](../../assets/StackNQueue/whiteboards.png)
+![White Board](../../assets/QueueWStack/whiteboard.jpg)
 
 
 ---
 
 ### Screen Shot
 ---
-![Application Demo](../../assets/StackNQueue/application-running.png)
+![Application Demo](../../assets/QueueWStack/application-running.png)
 Screenshot of functional application
 
-![Unit Testing](../../assets/StackNQueue/unit-test.png)
+![Unit Testing](../../assets/QueueWStack/unit-test-pass.png)
 Screenshot of unit testing passed
 
 ---
 ### Change Log
-- 1.2 - Created unit test that passes
-- 1.1 - Added classes, `Stack` and `Queue`, to the application and finished methods.
-- 1.0 - Set a folder for `Stack and Queue` challenge in the challenges folder.
+- 1.4 - README is done and table of content is updated.
+- 1.3 - Unit test passing and functional.
+- 1.2 - Created a `PseudoQueue` and added `Enqueue` and `Dequeue` methods.
+- 1.1 - Added classes, `Stack` and `Node`, to implement it to the `PseudoQueue`.
+- 1.0 - Set a folder for `QueueWithStacks` challenge in the challenges folder.
 
