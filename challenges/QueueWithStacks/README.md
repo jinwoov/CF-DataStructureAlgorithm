@@ -43,7 +43,7 @@ Create a class called `PseudoQueue` that has two stack objects when instated and
 
 
 ### Whiteboard Visual
-![White Board](../../assets/QueueWStack/whiteboard.jpg)
+![White Board](../../assets/QueueWStack/whiteboard.JPG)
 
 
 ---
