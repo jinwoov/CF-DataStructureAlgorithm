@@ -24,6 +24,9 @@ namespace QueueWithStacks
             }
         }
 
+        /// <summary>
+        /// This will test out the code have enqueue 2 numbers then dequeue 2. Thereafter, dequeue one more to throw an error.
+        /// </summary>
         static void RunApplication()
         {
             PseudoQueue pseudo = new PseudoQueue(); 
