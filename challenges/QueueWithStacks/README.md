@@ -1,4 +1,4 @@
-# **Stack and Queue**
+# **Queue with Stack**
 
 **Author: Jin Kim**
 
@@ -6,7 +6,7 @@
 
 ### Problem Domain
 
-Create a classes, `Stack` and `Queue` that will entail methods to add, take off, check if its empty or peek whats in stack and queue.
+Create a class called `PseudoQueue` that has two stack objects when instated and create a method called `Enqueue` and `Dequeue` that utilize `Push`, `Pop`, and `Peak` methods from `Stack` class.
 
 ---
 
