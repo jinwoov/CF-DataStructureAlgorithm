@@ -43,13 +43,7 @@ namespace QueueWithStacks.Classes
         /// <returns>Popped value</returns>
         public int Dequeue()
         {
-            if (PseudoQ == null) 
-            {
-                throw new IndexOutOfRangeException("Your queue is empty");
-            }
-
             return PseudoQ.Pop();
-
         }
     }
 }

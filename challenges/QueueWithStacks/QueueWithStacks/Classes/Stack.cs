@@ -26,7 +26,7 @@ namespace QueueWithStacks.Classes
         public int Pop()
         {
             if (Top == null)
-                throw new IndexOutOfRangeException("Index is out of range");
+                throw new IndexOutOfRangeException("ERROR! ERROR! There is nothing in the queue");
 
             Node Current = Top;
 
