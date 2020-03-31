@@ -33,5 +33,32 @@ namespace GunitTesting
 
             Assert.Equal(4, result);
         }
+
+        [Fact]
+        public void CanDequeueTheQueue()
+        {
+            PseudoQueue psuedo = new PseudoQueue();
+
+            psuedo.Enqueue(4);
+            psuedo.Enqueue(5);
+
+            int result = psuedo.Dequeue();
+
+            Assert.Equal(4, result);
+        }
+
+        [Fact]
+        public void DequeueingMoreThanQueueThrowsException()
+        {
+            PseudoQueue psuedo = new PseudoQueue();
+            psuedo.Enqueue(4);
+
+            psuedo.Dequeue();
+
+            Exception err = Record.Exception(() => psuedo.Dequeue());
+
+            Assert.IsType<IndexOutOfRangeException>(err);
+
+        }
     }
 }

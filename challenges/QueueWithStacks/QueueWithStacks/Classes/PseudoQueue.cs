@@ -17,24 +17,29 @@ namespace QueueWithStacks.Classes
 
         public void Enqueue(int value)
         {
-            if (PseudoQ != null)
-            { 
                 while (PseudoQ.Top != null)
                 {
                     PseudoQTwo.Push(PseudoQ.Pop());
                 }
-            }
 
             PseudoQ.Push(value);
 
-            if(PseudoQTwo != null)
-            {
                 while(PseudoQTwo.Top != null)
                 {
                     PseudoQ.Push(PseudoQTwo.Pop());
                 }
-            }
         }
 
+        public int Dequeue()
+        {
+            if (PseudoQ == null) 
+            {
+                throw new IndexOutOfRangeException("Your queue is empty");
+            }
+
+
+            return PseudoQ.Pop();
+
+        }
     }
 }
