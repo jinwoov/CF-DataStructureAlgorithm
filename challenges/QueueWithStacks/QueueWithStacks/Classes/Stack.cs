@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StacksAndQueues.Classes
+namespace QueueWithStacks.Classes
 {
     public class Stack
     {
@@ -45,15 +45,6 @@ namespace StacksAndQueues.Classes
                 throw new IndexOutOfRangeException("Index is out of range");
 
             return Top.Value;
-        }
-
-        /// <summary>
-        /// Method that checks if the stack is empty.
-        /// </summary>
-        /// <returns>Returns true when the stack is empty, otherwise it wil return false</returns>
-        public bool IsEmpty()
-        {
-            return Top == null;
         }
     }
 }
