@@ -10,6 +10,9 @@ namespace FIFOAnimalShelter.Classes
         public Animal Dog { get; set; }
 
         public int Order { get; set; }
+        /// <summary>
+        /// Constructor that will have defaulted type and name to match the logic
+        /// </summary>
         public AnimalShelter()
         {
             this.Cat = new Animal("", "CAT");
@@ -17,8 +20,13 @@ namespace FIFOAnimalShelter.Classes
             this.Order = 1;
         }
 
+        // Accepts the animal
         public List<Animal> shelter = new List<Animal>();
 
+        /// <summary>
+        /// The method that will add cat or dog per user choice into the shelter
+        /// </summary>
+        /// <param name="animal">user's pet that will be added</param>
         public void Enqueue(Animal animal)
         {
             animal.LineNumber = this.Order;
@@ -34,6 +42,11 @@ namespace FIFOAnimalShelter.Classes
             }
         }
 
+        /// <summary>
+        /// Dequeueing from the list when its called and returns what has been dequeued 
+        /// </summary>
+        /// <param name="pref">preferred animal</param>
+        /// <returns>Animal that has been dequeued</returns>
         public Animal Dequeue(Animal pref)
         {
             pref.Type = pref.Type.ToUpper();

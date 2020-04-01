@@ -12,7 +12,9 @@ namespace FIFOAnimalShelter
             AnimalHospital();
 
         }
-
+        /// <summary>
+        /// Running the methods in the animalshelter class to test everything is working
+        /// </summary>
         static void AnimalHospital()
         {
             AnimalShelter shelter = new AnimalShelter();
