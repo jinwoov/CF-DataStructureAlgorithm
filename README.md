@@ -14,6 +14,7 @@
 7. [Link List Merge](./challenges/LLMerge/README.md)
 8. [Stacks and Queues](./challenges/StacksAndQueues/README.md)
 9. [Queue With Stacks](./challenges/QueueWithStacks/README.md)
+10. [FIFOAnimalShelter](./challenges/FIFOAnimalShelter/README.md)
 
 
 ---
