@@ -16,8 +16,8 @@ Write a method call `Enqueue` that adds `animal` to the shelter. `animal` can be
 | :----------- |:--------- | :----------- |
 | []| Dog | [Dog]|
 
-
-
+ 
+ 
 ---
 
 ### Big O
