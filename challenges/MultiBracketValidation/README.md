@@ -23,14 +23,14 @@ Write a method `MultiBracketValidation` that takes in a string and see if the br
 
 | Time | Space |
 | :----------- | :----------- |
-| O(n) | O(1) |
+| O(n) | O(n) |
 
 
 ---
 
 
 ### Whiteboard Visual
-![LLMerged](../../assets/LLmerged.png)
+![White Board](../../assets/MultiBracketValidation/whiteboard.JPG)
 
 
 ---
@@ -45,6 +45,7 @@ Screenshot of unit testing passed
 
 ---
 ### Change Log
+- 1.4 - Added whiteboard to the README. Documentation is completed.
 - 1.3 - Completed README Files.  
 - 1.2 - Created unit tests for the method and everything is passing.
 - 1.1 - Created `MultiBracketValidation` and works in application.
