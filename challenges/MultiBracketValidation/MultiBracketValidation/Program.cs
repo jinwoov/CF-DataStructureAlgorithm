@@ -17,7 +17,7 @@ namespace MultiBracketValidation
             Console.WriteLine("--------------------------");
             Console.WriteLine();
             Console.WriteLine("This is example when '{0}' is tested and expect to be false: {1}", "EmptyString", MultiBracketValidation(""));
-            Console.WriteLine("--------------------------"); 
+            Console.WriteLine("--------------------------");
         }
         /// <summary>
         /// The method that will check if given string has perfect set of bracket, if it is it will return true, otherwise it returns false.
