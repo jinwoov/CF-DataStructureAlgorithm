@@ -15,7 +15,7 @@
 8. [Stacks and Queues](./challenges/StacksAndQueues/README.md)
 9. [Queue With Stacks](./challenges/QueueWithStacks/README.md)
 10. [FIFOAnimalShelter](./challenges/FIFOAnimalShelter/README.md)
-11. [MultiBracketValidation](./challengs/MultiBracketValidation/README.md)
+11. [MultiBracketValidation](./challenges/MultiBracketValidation/README.md)
 
 
 ---
