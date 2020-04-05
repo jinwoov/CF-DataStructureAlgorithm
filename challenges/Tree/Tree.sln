@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree", "Tree\Tree.csproj", "{7B6B3EC6-9F81-4709-B62C-3DD59EB21802}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GunitProject", "GunitProject\GunitProject.csproj", "{2BDB5C22-5DFE-47C7-8ACE-0A41CEC6C23B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B6B3EC6-9F81-4709-B62C-3DD59EB21802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6B3EC6-9F81-4709-B62C-3DD59EB21802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6B3EC6-9F81-4709-B62C-3DD59EB21802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6B3EC6-9F81-4709-B62C-3DD59EB21802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDB5C22-5DFE-47C7-8ACE-0A41CEC6C23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDB5C22-5DFE-47C7-8ACE-0A41CEC6C23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDB5C22-5DFE-47C7-8ACE-0A41CEC6C23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDB5C22-5DFE-47C7-8ACE-0A41CEC6C23B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B19E4660-F8EF-4AB6-B224-5B7B4A5C3174}
+	EndGlobalSection
+EndGlobal
