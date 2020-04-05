@@ -36,25 +36,18 @@ namespace Tree.Classes
            return Root;
         }
 
-        //public override bool Contains(int value)
-        //{
-        //    if (this.Root == null)
-        //    {
-        //        return false;
-        //    }
+        public bool Contains(Node root, int value)
+        {
+            if (root == null)
+                return false;
+            if (root.Value == value)
+                return true;
 
+            if (root.Value > value)
+                Contains(root.Left, value);
 
-        //    while(Root != null)
-        //    {
-        //        if(Root.Value == value)
-        //        {
-        //            return true;
-        //        }
+            return Contains(root.Right, value);
 
-        //        Root = Root.Left;
-        //        Root = Root.
-        //    }
-
-        //}
+        }
     }
 }

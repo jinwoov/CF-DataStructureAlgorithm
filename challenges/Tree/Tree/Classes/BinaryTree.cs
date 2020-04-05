@@ -6,7 +6,6 @@ namespace Tree.Classes
 {
     public class BinaryTree
     {
-        public BinarySearchTree Tree { get; set; }
 
         public List<int> InTree = new List<int>();
 
@@ -24,11 +23,39 @@ namespace Tree.Classes
             PreOrder(node.Right);
             return InTree.ToArray();
         }
+        public int[] InOrder(Node node)
+        {
 
-        //public int Traversal(Node node)
-        //{
-        //    if (node.Left == null && node.Right == null)
-        //        return node.Value
-        //}
+            if (node == null)
+            {
+                return InTree.ToArray();
+            }
+
+            InOrder(node.Left);
+
+            InTree.Add(node.Value);
+
+            InOrder(node.Right);
+
+            return InTree.ToArray();
+        }
+
+        public int[] PostOrder(Node node)
+        {
+
+            if (node == null)
+            {
+                return InTree.ToArray();
+            }
+
+            PostOrder(node.Left);
+
+            PostOrder(node.Right);
+
+            InTree.Add(node.Value);
+
+            return InTree.ToArray();
+        }
+
     }
 }
