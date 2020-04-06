@@ -47,6 +47,12 @@ namespace Tree.Classes
            return Root;
         }
 
+        /// <summary>
+        /// Check to see if the tree contains value that we are searching for
+        /// </summary>
+        /// <param name="root"> the root node of the tree</param>
+        /// <param name="value">search value</param>
+        /// <returns>returns true/false depending on the presence of search value in the tree</returns>
         public bool Contains(Node root, int value)
         {
             if (root == null)
