@@ -10,7 +10,6 @@ namespace Tree.Classes
 
         public int[] PreOrder(Node node)
         {
-
             if (node == null)
             {
                 return InTree.ToArray();
@@ -24,7 +23,6 @@ namespace Tree.Classes
         }
         public int[] InOrder(Node node)
         {
-
             if (node == null)
             {
                 return InTree.ToArray();
@@ -41,7 +39,6 @@ namespace Tree.Classes
 
         public int[] PostOrder(Node node)
         {
-
             if (node == null)
             {
                 return InTree.ToArray();
