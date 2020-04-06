@@ -4,10 +4,15 @@ using System.Text;
 
 namespace Tree.Classes
 {
+    /// <summary>
+    /// Class is used to add and find if number is in the tree
+    /// </summary>
     public class BinarySearchTree
     {
+        // Root property
         public Node Root { get; set; }
 
+        // Two constructors depending on if the value is given from get go
         public BinarySearchTree()
         {
             this.Root = null;
@@ -17,6 +22,12 @@ namespace Tree.Classes
             this.Root = new Node(value);
         }
 
+        /// <summary>
+        /// Add Node to the tree using the method
+        /// </summary>
+        /// <param name="node">This is where root is being taken</param>
+        /// <param name="value">Inserted value</param>
+        /// <returns></returns>
         public Node Add(Node node, int value)
         {
             if (node == null)

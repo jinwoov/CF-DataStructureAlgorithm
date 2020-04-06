@@ -25,20 +25,23 @@ namespace GunitProject
         }
 
         [Fact]
-        public void CanAddToLeftAndRight()
+        public void CanAddToLeft()
         {
             BinarySearchTree tree = new BinarySearchTree(5);
 
             tree.Add(tree.Root, 1);
+
+            Assert.Equal(1, tree.Root.Left.Value);
+        }
+
+        [Fact]
+        public void CanAddToRight()
+        {
+            BinarySearchTree tree = new BinarySearchTree(5);
+
             tree.Add(tree.Root, 10);
 
-            BinaryTree trees = new BinaryTree();
-
-            int[] result = trees.PreOrder(tree.Root);
-
-            int[] expectResult = { 5, 1, 10 };
-
-            Assert.Equal(expectResult, result);
+            Assert.Equal(10, tree.Root.Right.Value);
         }
 
         [Fact]

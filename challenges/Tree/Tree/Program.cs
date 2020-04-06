@@ -18,10 +18,15 @@ namespace Tree
             tree.Add(tree.Root, 12);
             tree.Add(tree.Root, 14);
 
-
+            // BinaryTree class objects
             BinaryTree checkTree = new BinaryTree();
+            BinaryTree checkTree1 = new BinaryTree();
+            BinaryTree checkTree2 = new BinaryTree();
 
+            // variables 
+            bool answer = tree.Contains(tree.Root, 4);
             int[] result = checkTree.PreOrder(tree.Root);
+
             Console.WriteLine("This is to check the PreOrder method");
             foreach (var item in result)
             {
@@ -30,7 +35,6 @@ namespace Tree
             Console.Write("End");
             Console.WriteLine();
 
-            BinaryTree checkTree1 = new BinaryTree();
 
             result = checkTree1.InOrder(tree.Root);
             Console.WriteLine("This is to check the InOrder method");
@@ -42,7 +46,6 @@ namespace Tree
 
             Console.WriteLine();
 
-            BinaryTree checkTree2 = new BinaryTree();
 
 
             result = checkTree2.PostOrder(tree.Root);
@@ -54,7 +57,6 @@ namespace Tree
             Console.Write("End");
 
             Console.WriteLine();
-            bool answer = tree.Contains(tree.Root, 4);
 
             Console.WriteLine($"Checking to see 4 exsits in the tree. Expected answer is True: {answer}");
         }
