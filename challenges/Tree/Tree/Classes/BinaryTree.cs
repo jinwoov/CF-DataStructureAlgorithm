@@ -6,7 +6,6 @@ namespace Tree.Classes
 {
     public class BinaryTree
     {
-
         public List<int> InTree = new List<int>();
 
         public int[] PreOrder(Node node)

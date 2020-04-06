@@ -15,20 +15,22 @@ namespace Tree
             BinarySearchTree tree = new BinarySearchTree(3);
             tree.Add(tree.Root, 4);
             tree.Add(tree.Root, 1);
-            tree.Add(tree.Root, 10);
+            tree.Add(tree.Root, 2);
             tree.Add(tree.Root, 12);
             tree.Add(tree.Root, 14);
 
 
             BinaryTree checkTree = new BinaryTree();
 
-            int[] result = checkTree.PostOrder(tree.Root);
+            int[] result = checkTree.PreOrder(tree.Root);
 
             foreach (var item in result)
             {
-                Console.WriteLine(item);
+                Console.Write($"{item} -> ");
             }
+            Console.Write("End");
 
+            Console.WriteLine();
             bool boore = tree.Contains(tree.Root, 10);
 
             Console.WriteLine($"this is the answer {boore}");

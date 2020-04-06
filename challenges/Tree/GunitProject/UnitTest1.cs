@@ -23,5 +23,72 @@ namespace GunitProject
 
             Assert.IsType<Node>(tree.Root);
         }
+
+        [Fact]
+        public void CanAddToLeftAndRight()
+        {
+            BinarySearchTree tree = new BinarySearchTree(5);
+
+            tree.Add(tree.Root, 1);
+            tree.Add(tree.Root, 10);
+
+            BinaryTree trees = new BinaryTree();
+
+            int[] result = trees.PreOrder(tree.Root);
+
+            int[] expectResult = { 5, 1, 10 };
+
+            Assert.Equal(expectResult, result);
+        }
+
+        [Fact]
+        public void CanTraversePreOrder()
+        {
+            BinarySearchTree tree = new BinarySearchTree(5);
+
+            tree.Add(tree.Root, 1);
+            tree.Add(tree.Root, 10);
+
+            BinaryTree trees = new BinaryTree();
+
+            int[] result = trees.PreOrder(tree.Root);
+
+            int[] expectResult = { 5, 1, 10 };
+
+            Assert.Equal(expectResult, result);
+        }
+        
+        [Fact]
+        public void CanTraverseInOrder()
+        {
+            BinarySearchTree tree = new BinarySearchTree(5);
+
+            tree.Add(tree.Root, 1);
+            tree.Add(tree.Root, 10);
+
+            BinaryTree trees = new BinaryTree();
+
+            int[] result = trees.InOrder(tree.Root);
+
+            int[] expectResult = { 1, 5, 10 };
+
+            Assert.Equal(expectResult, result);
+        }
+
+        [Fact]
+        public void CanTraversePostOrder()
+        {
+            BinarySearchTree tree = new BinarySearchTree(5);
+            tree.Add(tree.Root, 1);
+            tree.Add(tree.Root, 10);
+
+            BinaryTree trees = new BinaryTree();
+
+            int[] result = trees.PostOrder(tree.Root);
+
+            int[] expectResult = { 1, 10, 5 };
+
+            Assert.Equal(expectResult, result);
+        }
     }
 }
