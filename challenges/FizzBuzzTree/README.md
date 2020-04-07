@@ -1,6 +1,7 @@
 # **Fizz Buzz Tree**
 
-**Author: Jin Kim**
+**Author: Jin Kim**  
+*Co-author: Carrington Beard*
 
 ---
 
@@ -43,7 +44,7 @@ Create method call `FizzBuzzTree` that takes in a tree as an argument and withou
 
 ### Whiteboard Visual
 ![White Board](../../assets/FizzBuzzTree/whiteboard.png)
-
+This whiteboard was completed with Carrington Beard
 
 ---
 
