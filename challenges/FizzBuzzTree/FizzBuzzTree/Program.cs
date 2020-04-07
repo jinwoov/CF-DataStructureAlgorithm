@@ -10,27 +10,49 @@ namespace FizzBuzzTree
         /// </summary>
         static void Main()
         {
-            BinarySearchTree bst = new BinarySearchTree(5);
-            bst.Add(bst.Root, 15);
-            bst.Add(bst.Root, 5);
-            bst.Add(bst.Root, 7);
-            bst.Add(bst.Root, 3);
-            bst.Add(bst.Root, 9);
-            bst.Add(bst.Root, 12);
-            bst.Add(bst.Root, 20);
-            bst.Add(bst.Root, 150);
-
-
-            BinarySearchTree bts = FizzBuzzTree(bst);
-            BinaryTree bt = new BinaryTree();
-
-            string[] stringBTS = bt.StringOrder(bts.Root);
-
-            foreach (var item in stringBTS)
+            try
             {
-                Console.Write($"{item} => ");
+                BinaryTree bt = new BinaryTree();
+                BinarySearchTree bst = new BinarySearchTree(5);
+                bst.Add(bst.Root, 15);
+                bst.Add(bst.Root, 5);
+                bst.Add(bst.Root, 7);
+                bst.Add(bst.Root, 3);
+                bst.Add(bst.Root, 9);
+                bst.Add(bst.Root, 12);
+                bst.Add(bst.Root, 20);
+                bst.Add(bst.Root, 150);
+
+                int[] intBTs = bt.PreOrder(bst.Root);
+
+                Console.WriteLine("This is is when its integer");
+                foreach (var item in intBTs)
+                {
+                    Console.Write($"{item} => ");
+                }
+                Console.Write("END");
+
+                BinarySearchTree bts = FizzBuzzTree(bst);
+                BinaryTree bt2 = new BinaryTree();
+
+                string[] stringBTS = bt2.StringOrder(bts.Root);
+                Console.WriteLine();
+                Console.WriteLine("This is is when its string");
+                foreach (var item in stringBTS)
+                {
+                    Console.Write($"{item} => ");
+                }
+                Console.Write("END");
+
             }
-            Console.Write("END");
+            finally
+            {
+
+                Console.WriteLine();
+                Environment.Exit(0);
+            }
+           
+            
         }
 
         /// <summary>
