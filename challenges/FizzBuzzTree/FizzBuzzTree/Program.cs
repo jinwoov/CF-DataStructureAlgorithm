@@ -3,7 +3,7 @@ using System;
 
 namespace FizzBuzzTree
 {
-    class Program
+    public class Program
     {
         /// <summary>
         /// This method creates the tree and add child and runs the method and outputs whats in the tree
@@ -33,7 +33,12 @@ namespace FizzBuzzTree
             Console.Write("END");
         }
 
-        static Node Traverse(Node node)
+        /// <summary>
+        /// Traverse method that goes through the tree and inputs string to the tree when it finds value
+        /// </summary>
+        /// <param name="node">root node</param>
+        /// <returns>node for it to traverse</returns>
+        public static Node Traverse(Node node)
         {
             if (node == null)
             {
@@ -60,8 +65,12 @@ namespace FizzBuzzTree
             Traverse(node.Right);
             return node;
         }
-
-        static BinarySearchTree FizzBuzzTree(BinarySearchTree bts)
+        /// <summary>
+        /// Will run the recursive method that will input "Fizz Buzz", "Fizz", "Buzz" strings
+        /// </summary>
+        /// <param name="bts">the tree that you want to analyze</param>
+        /// <returns>The tree that is done with fizzbuzz analysis</returns>
+        public static BinarySearchTree FizzBuzzTree(BinarySearchTree bts)
         {
             Traverse(bts.Root);
 
