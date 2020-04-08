@@ -36,6 +36,7 @@ namespace BreadthFirst.Classes
             while (!queue.IsEmpty())
             {
                 Node front = queue.Dequeue();
+
                 Intree2.Add(front.Value);
 
                 if (front.Left != null) { queue.Enqueue(front.Left); }
