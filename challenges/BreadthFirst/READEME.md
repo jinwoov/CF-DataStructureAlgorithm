@@ -51,7 +51,8 @@ Screenshot of unit testing passed
 
 ---
 ### Change Log
-- 1.2 - Created unit test that passes
-- 1.1 - Added classes, `Stack` and `Queue`, to the application and finished methods.
-- 1.0 - Set a folder for `Stack and Queue` challenge in the challenges folder.
+- 1.3 - Created unit tests that passes.
+- 1.2 - Created a method that will be used to traverse in breadth first sequence.
+- 1.1 - Added classes, `Node`, `BinaryTree`, `BinarySearchTree` and `Queue`, to the application and finished methods.
+- 1.0 - Set a folder for `BreadthFirst` challenge in the challenges folder.
 
