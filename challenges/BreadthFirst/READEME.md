@@ -36,7 +36,7 @@ Create a method that resides in the BinaryTree class. Make this method to traver
 
 
 ### Whiteboard Visual
-![White Board](../../assets/BreadthFirst/whiteboard.png)
+![White Board](../../assets/BreadthFirst/Whiteboard.png)
 ###### *Coauthors: Matthew Johnnson, Allyson Reyes, Rosalyn Johnson** 
 
 ---
