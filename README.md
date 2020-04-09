@@ -19,6 +19,7 @@
 12. [Binary Tree(Happy Little Trees)](./challenges/Tree/README.md)
 13. [Fizz Buzz Tree](./challenges/FizzBuzzTree/README.md)
 14. [Breadth First](./challenges/BreadthFirst/READEME.md)
+15. [Find Max Value](./challenges/FindMaxValue/README.md)
 
 
 ---
