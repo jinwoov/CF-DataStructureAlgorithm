@@ -1,4 +1,4 @@
-# **Sum Of All Number**
+# **Sum Of All Odd Number**
 
 **Author: Jin Kim**
 

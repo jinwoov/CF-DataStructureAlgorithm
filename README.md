@@ -20,7 +20,7 @@
 13. [Fizz Buzz Tree](./challenges/FizzBuzzTree/README.md)
 14. [Breadth First](./challenges/BreadthFirst/READEME.md)
 15. [Find Max Value](./challenges/FindMaxValue/README.md)
-16. [Sum of All Number](./challenges/SumOfAllOddNumber/README.md)
+16. [Sum of All Odd Number](./challenges/SumOfAllOddNumber/README.md)
 
 
 ---
