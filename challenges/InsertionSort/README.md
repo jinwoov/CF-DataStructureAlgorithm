@@ -29,7 +29,10 @@ Write a method `InsertionSort` that takes in integer array and sort it from lowe
 ---
 
 
-### Whiteboard Visual
+### Blog Article
+Sample of [8,4,23,42,16,15]
+ 
+![Blog](../../assets/InsertionSort/Whiteboard.png)
 
 
 
