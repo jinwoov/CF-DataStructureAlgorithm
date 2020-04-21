@@ -6,27 +6,30 @@
 
 ---
 
-### Problem Domain
+### Definition
 
-Write a method `InsertionSort` that takes in integer array and sort it from lowest to highest and return that array.
-
----
-
-### Inputs and Expected Outputs
-
-| Input |  Expected Output |
-| :----------- |:--------- |
-| [8, 4, 23, 42, 16, 15] | [4, 8, 15, 16, 23, 42] | 
+Insertion sort is a method that holds the current iteration element using `temp` variable and sort through the array in backward order until temp seems fit.
 
 ---
 
-### Big O
+### Pseudo Code
 
+```cs
+  InsertionSort(int[] arr)
+  
+    FOR i = 1 to arr.length
+    
+      int j <-- i - 1
+      int temp <-- arr[i]
+      
+      WHILE j >= 0 AND temp < arr[j]
+        arr[j + 1] <-- arr[j]
+        j <-- j - 1
+        
+      arr[j + 1] <-- temp
 
-| Time | Space |
-| :----------- | :----------- |
-| O(n^2) | O(1) |
-
+    return arr
+```
 
 ---
 
@@ -44,6 +47,16 @@ Sample of [8,4,23,42,16,15]
 ---
 ![Application Demo](../../assets/InsertionSort/Application.png)
 Screenshot of application running
+
+---
+
+### Efficiency
+
+- Time: O(n^2)
+  - This is because there is nested while loop inside of for loop, which up the time by `O` of `n` `square`
+
+- Space: 0(1)
+  - This is because there ins't any array or list that is added to the heap and nothing has been declare or instantiated that will take the space, making the space constant of 1.
 
 
 ---
