@@ -43,9 +43,7 @@ Screenshot of application running
 
 ---
 ### Change Log
-- 1.4 - Completed README Files.  
-- 1.3 - Unit testing implemented and passed.
-- 1.2 - Repository error, recreated the methods and added the refactored the MergedLists method to a new class. 
-- 1.1 - Created `MergedLists` and works in application.
+- 1.2 - Completed README Files.   
+- 1.1 - Created `InsertionSort` and works in application.
 - 1.0 - Created a repository and initialized repository.
 
