@@ -30,7 +30,7 @@ Write a method `InsertionSort` that takes in integer array and sort it from lowe
 
 
 ### Whiteboard Visual
-![LLMerged](../../assets/LLmerged.png)
+
 
 
 ---
