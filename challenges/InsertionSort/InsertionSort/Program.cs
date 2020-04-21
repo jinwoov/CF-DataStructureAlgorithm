@@ -8,12 +8,12 @@ namespace InsertionSort
         {
             int[] array = { 4, 8, 15, 42, 16, 23 };
 
+            Console.WriteLine($"This is before the sort {String.Join(", ", array)}"); 
+
             int [] newArray = InsertionSort(array);
 
-            foreach (var number in newArray)
-            {
-                Console.WriteLine(number);
-            }
+            Console.WriteLine($"This is after the sort {String.Join(", ", newArray)}");
+
         }
 
         static int[] InsertionSort(int[] arr)
