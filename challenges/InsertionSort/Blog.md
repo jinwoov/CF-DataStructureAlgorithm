@@ -2,6 +2,8 @@
 
 **Author: Jin Kim**
 
+*Co-author: Allyson Reyes*
+
 ---
 
 ### Problem Domain
