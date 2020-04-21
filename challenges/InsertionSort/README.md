@@ -12,11 +12,9 @@ Write a method `InsertionSort` that takes in integer array and sort it from lowe
 
 ### Inputs and Expected Outputs
 
-| Input(List1) | Input2(List2) |Expected Output |
-| :----------- |:--------- | :----------- |
-| head -> [1] -> [3] -> [2] -> X| head -> [5] -> [9] -> [4] -> X | head -> [1] -> [5] -> [3] -> [9] -> [2] -> [4] -> X |
-|head -> [1] -> [3] -> X| head -> [5] -> [9] -> [4] -> X | head -> [1] -> [5] -> [3] -> [9] -> [4] -> X |
-|head -> [1] -> [3] -> [2] -> X|head -> [5] -> [9] -> X | head -> [1] -> [5] -> [3] -> [9] -> [2] -> X |
+| Input |  Expected Output |
+| :----------- |:--------- |
+| [8, 4, 23, 42, 16, 15] | [4, 8, 15, 16, 23, 42] | 
 
 ---
 
@@ -25,7 +23,7 @@ Write a method `InsertionSort` that takes in integer array and sort it from lowe
 
 | Time | Space |
 | :----------- | :----------- |
-| O(n) | O(1) |
+| O(n^2) | O(1) |
 
 
 ---
@@ -39,11 +37,9 @@ Write a method `InsertionSort` that takes in integer array and sort it from lowe
 
 ### Screen Shot
 ---
-![Application Demo](../../assets/LLMerged/applicaiton-running.png)
+![Application Demo](../../assets/InsertionSort/Application.png)
 Screenshot of application running
 
-![Unit Testing](../../assets/LLMerged/unit-testing-pass.png)
-Screenshot of unit testing passed
 
 ---
 ### Change Log
@@ -51,5 +47,5 @@ Screenshot of unit testing passed
 - 1.3 - Unit testing implemented and passed.
 - 1.2 - Repository error, recreated the methods and added the refactored the MergedLists method to a new class. 
 - 1.1 - Created `MergedLists` and works in application.
-- 1.0 - Created a repository and copied classes from Link list.
+- 1.0 - Created a repository and initialized repository.
 
