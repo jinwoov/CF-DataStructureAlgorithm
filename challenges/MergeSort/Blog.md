@@ -55,9 +55,17 @@ ALGORITHM Merge(left, right, arr)
 
 
 ### Blog Article
-Sample of [8,4,3,42,16,15]
+Input `[8,4,3,42,16,15]`
  
 ![Blog](../../assets/MergeSort/whiteboard.png)
+
+Pass 1 ~ 3: This is call stacking on top inside of `MergeSort` method where array is partialing to the left and right until right side has one left and one right.  
+Pass 4 ~ 5: This is in `Merge` method, where it is being sorted and using `k` for array, `i` for left array, `j` for right array counter.   
+Pass 6 ~ 8: Top stack pop off and array will go through `Merge` method to sort out. After its sorted it will pop off from call stack.  
+Pass 9: After right side of the array will go top of the stack and partial it to left and right and since right side length is more than 1 it will partial one more time.  
+Pass 10 - 11: Adding into the call stack, `[16,15]` will be used for `Merge` method, which then sort itself out.  
+Pass 12 - 14: Then the right side enters the `Merge` method, which will sort its array then pop off the call stack.  
+Pass 15+: Entire array with left and right arrays will enter `Merge` Method, however, since it is been sorted, it will go through the method without any sorting.
 
 
 
