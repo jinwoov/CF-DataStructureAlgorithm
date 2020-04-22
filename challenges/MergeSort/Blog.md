@@ -72,10 +72,10 @@ Screenshot of application running
 
 ### Efficiency
 
-- Time: O(n^2)
+- Time: O(n log n)
   - This is because there is nested while loop inside of for loop, which up the time by `O` of `n` `square`
 
-- Space: 0(1)
+- Space: 0(n)
   - This is because there ins't any array or list that is added to the heap and nothing has been declare or instantiated that will take the space, making the space constant of 1.
 
 
