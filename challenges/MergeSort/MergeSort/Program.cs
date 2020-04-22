@@ -36,6 +36,11 @@ namespace MergeSort
 
         }
 
+        /// <summary>
+        /// This sorts left and right and after its sorted it sorts entire array
+        /// </summary>
+        /// <param name="arr">array to be sorted</param>
+        /// <returns>sorted Array</returns>
         public static int[] MergeSort(int[] arr)
         {
             int n = arr.Length;
@@ -69,6 +74,13 @@ namespace MergeSort
             return arr;
         }
 
+        /// <summary>
+        /// Method that will be used to sort array
+        /// </summary>
+        /// <param name="left">left of the array</param>
+        /// <param name="right">right side of the array</param>
+        /// <param name="arr">entire array</param>
+        /// <returns>sorted array</returns>
         public static int[] Merge(int[] left, int[] right, int[] arr)
         {
             int i = 0;
