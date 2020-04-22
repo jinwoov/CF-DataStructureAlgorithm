@@ -8,7 +8,7 @@
 
 ### Definition
 
-`Merge sort` method is taking the two side of the array and sort it using `Merge` method then at the end array will be merged in sorted manner.
+`Merge sort` method is taking the two side of the array and partial it until left and right has one number each. As call stack pop off, it will continually sort until array is fully sorted.
 
 ---
 
@@ -57,7 +57,7 @@ ALGORITHM Merge(left, right, arr)
 ### Blog Article
 Sample of [8,4,23,42,16,15]
  
-![Blog](../../assets/InsertionSort/Whiteboard.png)
+![Blog](../../assets/MergeSort/whiteboard.png)
 
 
 
@@ -65,23 +65,26 @@ Sample of [8,4,23,42,16,15]
 
 ### Screen Shot
 ---
-![Application Demo](../../assets/InsertionSort/Application.png)
+![Application Demo](../../assets/MergeSort/Application.png)
 Screenshot of application running
+
+![Unit Test](../../assets/MergeSort/unittest.png)
+Unit test passing
 
 ---
 
 ### Efficiency
 
 - Time: O(n log n)
-  - This is because there is nested while loop inside of for loop, which up the time by `O` of `n` `square`
+  - This is because there are more loop as the recursion occurs.
 
 - Space: 0(n)
-  - This is because there ins't any array or list that is added to the heap and nothing has been declare or instantiated that will take the space, making the space constant of 1.
+  - This is because we only create array to store left and right and will be used continuously throughout the recursion.
 
 
 ---
 ### Change Log
 - 1.2 - Completed README Files.   
-- 1.1 - Created `InsertionSort` and works in application.
+- 1.1 - Created `MergeSort` and works in application.
 - 1.0 - Created a repository and initialized repository.
 
