@@ -22,6 +22,7 @@
 15. [Find Max Value](./challenges/FindMaxValue/README.md)
 16. [Sum of All Odd Number](./challenges/SumOfAllOddNumber/README.md)
 17. [Insertion Sort](./challenges/InsertionSort/Blog.md)
+18. [Merge Sort](./challenges/MergeSort/Blog.md)
 
 
 
