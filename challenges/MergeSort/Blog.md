@@ -55,7 +55,7 @@ ALGORITHM Merge(left, right, arr)
 
 
 ### Blog Article
-Sample of [8,4,23,42,16,15]
+Sample of [8,4,3,42,16,15]
  
 ![Blog](../../assets/MergeSort/whiteboard.png)
 
