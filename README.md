@@ -23,6 +23,7 @@
 16. [Sum of All Odd Number](./challenges/SumOfAllOddNumber/README.md)
 17. [Insertion Sort](./challenges/InsertionSort/Blog.md)
 18. [Merge Sort](./challenges/MergeSort/Blog.md)
+19. [Quick Sort](./challenges/QuickSortt/Blog.md)
 
 
 
