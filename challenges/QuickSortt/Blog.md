@@ -1,4 +1,4 @@
-# **Merge Sort**
+# **Quick Sort**
 
 **Author: Jin Kim**
 
@@ -8,13 +8,22 @@
 
 ### Definition
 
-`Quick sort` method is a way of sorting algorithm that first picks `pivot` and using that pivot determine where `low`, tracker` lies and sorts on left and right sides. This will then sort out everything in array at the end.
+`Quick sort` method is a way of sorting algorithm that first picks `pivot` and using that pivot determine where `low`, tracker` 
 
 ---
 
 ### Pseudo Code
 
 ```cs
+ALGORITHM QuickSort(arr, left, right)
+    if left < right
+        // Partition the array by setting the position of the pivot value 
+        DEFINE position <-- Partition(arr, left, right)
+        // Sort the left
+        QuickSort(arr, left, position - 1)
+        // Sort the right
+        QuickSort(arr, position + 1, right)
+
 ALGORITHM Partition(arr, left, right)
     // set a pivot value as a point of reference
     DEFINE pivot <-- arr[right]
