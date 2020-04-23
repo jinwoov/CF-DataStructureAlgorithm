@@ -8,7 +8,7 @@
 
 ### Definition
 
-`Quick sort` method is a way of sorting algorithm that first picks `pivot` and using that pivot determine where `low`, tracker` 
+`Quick sort` method is a way of sorting algorithm that first picks `pivot` and using that pivot determine where `low`, tracker, lies. Using the position, left and right side of the array will be sorted through separately. 
 
 ---
 
@@ -55,13 +55,12 @@ Input `[8,4,3,42,16,15]`
  
 ![Blog](../../assets/QuickSort/trace.png)
 
-Pass 1 ~ 3: This is call stacking on top inside of `MergeSort` method where array is partialing to the left and right until right side has one left and one right.  
-Pass 4 ~ 5: This is in `Merge` method, where it is being sorted and using `k` for array, `i` for left array, `j` for right array counter.   
-Pass 6 ~ 8: Top stack pop off and array will go through `Merge` method to sort out. After its sorted it will pop off from call stack.  
-Pass 9: After right side of the array will go top of the stack and partial it to left and right and since right side length is more than 1 it will partial one more time.  
-Pass 10 - 11: Adding into the call stack, `[16,15]` will be used for `Merge` method, which then sort itself out.  
-Pass 12 - 14: Then the right side enters the `Merge` method, which will sort its array then pop off the call stack.  
-Pass 15+: Entire array with left and right arrays will enter `Merge` Method, however, since it is been sorted, it will go through the method without any sorting.
+Pass 1 ~ 2: This is when array just enters partition method in which low will be placed at the -1 position and pivot will be the farthest right of given array.  
+Pass 3 ~ 7: During this time i will be iterated and when element at position i is less than the pivot integer, it will swap that element with element at position low. Since low is always at same position as i, number will not change. When the element is greater than pivot, low lags behind.   
+Pass 8: After the for loop, pivot will swap position with element at position low+1 and set where the midpoint is to partial the array to be sorted.  
+Pass 9-11: Left side is being exchanged and sorted.  
+Pass 12 - 15: Right side is being sorted.  
+Pass 16: After everything is sorted for the left and right side, everything in the array will be sorted from low to highest number.
 
 
 
@@ -69,10 +68,10 @@ Pass 15+: Entire array with left and right arrays will enter `Merge` Method, how
 
 ### Screen Shot
 ---
-![Application Demo](../../assets/MergeSort/Application.png)
+![Application Demo](../../assets/QuickSort/Application.png)
 Screenshot of application running
 
-![Unit Test](../../assets/MergeSort/unittest.png)
+![Unit Test](../../assets/QuickSort/unit-test.png)
 Unit test passing
 
 ---
@@ -80,15 +79,15 @@ Unit test passing
 ### Efficiency
 
 - Time: O(n log n)
-  - This is because there are more loop as the recursion occurs.
+  - This is because there are for loop that will be ran recursively as the array are being ran through `partitioning` method.
 
-- Space: 0(n)
-  - This is because we only create array to store left and right and will be used continuously throughout the recursion.
+- Space: 0(log n)
+  - This is because left and right side of the array are partitioned and every time partitioning method is ran, there is data that is being store logarithmatically. 
 
 
 ---
 ### Change Log
 - 1.2 - Completed README Files.   
-- 1.1 - Created `MergeSort` and works in application.
+- 1.1 - Created `QuickSort` and works in application.
 - 1.0 - Created a repository and initialized repository.
 
