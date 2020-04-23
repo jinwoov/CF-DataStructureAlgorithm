@@ -2,7 +2,7 @@
 
 namespace QuickSortt
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -70,13 +70,17 @@ namespace QuickSortt
             return low + 1;
         }
 
-        public static void Swap(int[] arr, int mid, int low)
+        /// <summary>
+        /// Swapping the order
+        /// </summary>
+        /// <param name="arr">array that will be changed</param>
+        /// <param name="i"></param>
+        /// <param name="low"></param>
+        public static void Swap(int[] arr, int i, int low)
         {
-            int temp;
+            int temp = arr[i];
 
-            temp = arr[mid];
-
-            arr[mid] = arr[low];
+            arr[i] = arr[low];
 
             arr[low] = temp;
         }
