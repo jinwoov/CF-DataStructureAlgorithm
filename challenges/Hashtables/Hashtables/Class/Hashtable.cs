@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Hashtables.Class
@@ -31,10 +32,33 @@ namespace Hashtables.Class
             else
             {
                 Node node = new Node(value);
-                var linkList = this.Table[hashedKey];
-                linkList.AddFirst(node);
+                this.Table[hashedKey].AddFirst(node);
+            }
+        }
+
+        public string Get(string key)
+        {
+            int position = Hash(key);
+            if (this.Table[position] != null)
+            {
+                var linkList = this.Table[position];
+
+                Node findNode = linkList.First();
+
+                return findNode.Value;
 
             }
+            else
+            {
+                return null;
+            }
+        }
+
+        public bool Contains(string key)
+        {
+            int position = Hash(key);
+
+            return this.Table[position] != null ? true : false;
         }
 
         public int Hash(string key)

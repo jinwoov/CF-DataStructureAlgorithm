@@ -9,6 +9,17 @@ namespace Hashtables
         {
             Hashtable ht = new Hashtable(10);
             ht.Add("mochi", "rochi");
+            ht.Add("water", "polo");
+            ht.Add("coca", "cola");
+
+
+            Console.WriteLine(ht.Get("mochi"));
+            Console.WriteLine(ht.Get("water"));
+            Console.WriteLine(ht.Get("bus"));
+
+
+
+
         }
     }
 }
