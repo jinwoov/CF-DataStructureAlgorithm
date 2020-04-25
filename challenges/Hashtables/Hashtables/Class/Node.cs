@@ -16,6 +16,10 @@ namespace Hashtables.Class
         /// </summary>
         public Node Next { get; set; }
 
+        /// <summary>
+        /// Constructor for this class
+        /// </summary>
+        /// <param name="val">value tat will be stored</param>
         public Node(string val)
         {
             this.Value = val;
