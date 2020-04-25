@@ -7,17 +7,31 @@ namespace Hashtables.Class
 {
     public class Hashtable
     {
-
+        /// <summary>
+        /// The number that will be used to determine the array size
+        /// </summary>
         public int Bucket;
 
+        /// <summary>
+        /// hash table property
+        /// </summary>
         public LinkedList<Node>[] Table;
 
+        /// <summary>
+        /// Constructor that will be used when the object is instantiated
+        /// </summary>
+        /// <param name="size"></param>
         public Hashtable(int size)
         {
             this.Bucket = size;
-            this.Table = new LinkedList<Node>[100];
+            this.Table = new LinkedList<Node>[size];
         }
 
+        /// <summary>
+        /// Add node to the the linklist of arry
+        /// </summary>
+        /// <param name="key">key that will be hashed</param>
+        /// <param name="value">value that will be stored in array</param>
         public void Add(string key, string value)
         {
             int hashedKey = Hash(key);
@@ -35,7 +49,12 @@ namespace Hashtables.Class
                 this.Table[hashedKey].AddFirst(node);
             }
         }
-
+        
+        /// <summary>
+        /// Getting the value when key is called
+        /// </summary>
+        /// <param name="key">key that will be used to search</param>
+        /// <returns>return the value</returns>
         public string Get(string key)
         {
             int position = Hash(key);
@@ -54,6 +73,11 @@ namespace Hashtables.Class
             }
         }
 
+        /// <summary>
+        /// See if the has contains the key value
+        /// </summary>
+        /// <param name="key">Key that will be searched in the table</param>
+        /// <returns>boolean</returns>
         public bool Contains(string key)
         {
             int position = Hash(key);
@@ -61,12 +85,22 @@ namespace Hashtables.Class
             return this.Table[position] != null ? true : false;
         }
 
+        /// <summary>
+        /// Hashing the key to be used in index
+        /// </summary>
+        /// <param name="key">Key to be hashed</param>
+        /// <returns>has number</returns>
         public int Hash(string key)
         {
             int sum = 0;
             for (int i = 0; i < key.Length; i++)
             {
                 sum += key[i] % Bucket;
+            }
+
+            if (Table.Length < sum)
+            {
+                Array.Resize(ref Table, Table.Length + sum);
             }
 
             return sum;

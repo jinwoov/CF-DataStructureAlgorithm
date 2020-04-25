@@ -7,7 +7,7 @@ namespace Hashtables
     {
         static void Main(string[] args)
         {
-            Hashtable ht = new Hashtable(10);
+            Hashtable ht = new Hashtable(49);
             ht.Add("mochi", "rochi");
             ht.Add("water", "polo");
             ht.Add("coca", "cola");
