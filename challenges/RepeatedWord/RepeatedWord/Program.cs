@@ -29,7 +29,6 @@ namespace RepeatedWord
         {
             sentence = sentence.Replace(",", "");
             string[] splitted = sentence.Split(" ");
-            int s = splitted.Length - 1;
             Hashtable ht = new Hashtable();
 
             for (int i = 0; i < splitted.Length; i++)
