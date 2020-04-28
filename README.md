@@ -25,6 +25,8 @@
 18. [Merge Sort](./challenges/MergeSort/Blog.md)
 19. [Quick Sort](./challenges/QuickSortt/Blog.md)
 19. [Hash Table](./challenges/Hashtables/README.md)
+20. [Repeated Word](./challenges/RepeatedWord/README.md)
+
 
 
 
