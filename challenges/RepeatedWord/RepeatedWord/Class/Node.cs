@@ -25,7 +25,6 @@ namespace Hashtables.Class
         /// </summary>
         /// <param name="key">key that will be stored</param>
         /// <param name="value">value that will be stored</param>
-
         public Node(string key, string value)
         {
             this.Key = key;

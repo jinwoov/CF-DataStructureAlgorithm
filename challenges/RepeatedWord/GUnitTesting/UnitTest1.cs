@@ -9,22 +9,22 @@ namespace GUnitTesting
         [Fact]
         public void TestMyMehodIsCheckingForDuplicate()
         {
-            string sent = "Battle beet bear battle star galactica";
+            string sent = "glowing blue pro blue dool";
 
             string result = Program.RepeatedWord(sent);
 
-            Assert.Equal("battle", result);
+            Assert.Equal("blue", result);
 
         }
 
         [Fact]
         public void TestAgainWithSpecialChar()
         {
-            string sent = "Battle, beet bear battle star galactica";
+            string sent = "focus hocus rocus locus hocus";
 
             string result = Program.RepeatedWord(sent);
 
-            Assert.Equal("battle", result);
+            Assert.Equal("hocus", result);
 
         }
 

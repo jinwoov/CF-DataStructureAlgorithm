@@ -20,6 +20,11 @@ namespace RepeatedWord
             Console.WriteLine(RepeatedWord(sen3));
         }
 
+        /// <summary>
+        /// Checking if the string has repeated word
+        /// </summary>
+        /// <param name="sentence">string sentence</param>
+        /// <returns>the repeated word</returns>
         public static string RepeatedWord(string sentence)
         {
             sentence = sentence.Replace(",", "");
