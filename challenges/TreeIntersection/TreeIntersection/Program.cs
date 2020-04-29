@@ -26,10 +26,15 @@ namespace TreeIntersection
             bstTwo.Add(btTwo.Root, 4);
             bstTwo.Add(btTwo.Root, 7);
 
+            int[] firstTree = bt.PreOrder(bt.Root);
+            int[] secondTree = btTwo.PreOrder(btTwo.Root);
+
+            Console.WriteLine($"This is the first tree: {String.Join(", ", firstTree)}");
+            Console.WriteLine($"This is the second tree: {String.Join(", ", secondTree)}");
 
             int[] finalArray = TreeIntersection(bt, btTwo);
 
-            Console.WriteLine(String.Join(", ", finalArray));
+            Console.WriteLine($"This is duplicated number: {String.Join(", ", finalArray)}");
         }
 
         /// <summary>
