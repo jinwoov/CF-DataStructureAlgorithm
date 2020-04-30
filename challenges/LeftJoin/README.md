@@ -18,7 +18,7 @@ Hash Table One
 | :----------- |:--------- |
 | New York | Jets | 
 
-Hash Table One  
+Hash Table Two  
 
 | Key     |   Value    |
 | :----------- |:--------- |
