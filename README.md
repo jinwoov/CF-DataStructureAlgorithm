@@ -27,6 +27,8 @@
 19. [Hash Table](./challenges/Hashtables/README.md)
 20. [Repeated Word](./challenges/RepeatedWord/README.md)
 21. [Tree Intersection](./challenges/TreeIntersection/README.md)
+22. [LeftJoin](./challenges/LeftJoin/README.md)
+
 
 
 
