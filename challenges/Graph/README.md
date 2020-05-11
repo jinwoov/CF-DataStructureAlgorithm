@@ -2,13 +2,11 @@
 
 **Author: Jin Kim**
 
-*Co-author: Allyson Reyes*
-
 ---
 
 ### Problem Domain
 
-Create a `Graph` class that implements `Addnode`,`AddEdge`, `GetNode`, `GetNeightbor`, and `Size` methods that will either add or provide whats in the graph.
+Create a `Graph` class that implements `Addnode`, `AddEdge`, `GetNode`, `GetNeightbor`, and `Size` methods that will either add or provide whats in the graph.
 
 ---
 
@@ -42,7 +40,7 @@ Graph Direction
 
 
 ### Whiteboard Visual
-![Application Demo](../../assets/graph/whiteboard.png)
+Implementation challenge does not require whiteboard
 
 ---
 
