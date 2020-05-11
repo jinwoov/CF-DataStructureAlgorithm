@@ -18,7 +18,12 @@ namespace Graph.Class
             AdjacencyList = new Dictionary<Vertex<T>, List<Edge<T>>>();
         }
 
-        // Adding a node to the graph
+
+        /// <summary>
+        /// Adding a node to the graph
+        /// </summary>
+        /// <param name="value">Adding node to the graph</param>
+        /// <returns>node that has been added</returns>
         public Vertex<T> AddNode(T value)
         {
             Vertex<T> node = new Vertex<T>(value);
@@ -87,6 +92,9 @@ namespace Graph.Class
         /// <returns>Delegating private variable that stores the size of the graph</returns>
         public int Size() => _size;
 
+        /// <summary>
+        /// Console logging all of the vertex that is in the graph
+        /// </summary>
         public void Print()
         {
             foreach (var vertex in AdjacencyList)
