@@ -49,7 +49,7 @@ Implementation challenge does not require whiteboard
 ![Application Demo](../../assets/Graph/Application.png)
 Screenshot of application running
 
-![Unit Testing](../../assets/graph/Unit-test.png)
+![Unit Testing](../../assets/Graph/Unit-test.png)
 Screenshot of unit testing passed
 
 ---
